@@ -1,0 +1,45 @@
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <center>
+        <TableView fx:id="movieDisplay">
+
+            <columns>
+                <TableColumn text="Title">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="title"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Rating">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="movieID"/>
+                    </cellValueFactory>
+                </TableColumn>
+<!--                 <TableColumn text="Genre">-->
+<!--                    <cellValueFactory>-->
+<!--                        <PropertyValueFactory property="genre"/>-->
+<!--                    </cellValueFactory>-->
+<!--                </TableColumn>-->
+<!--                 <TableColumn text="Actors">-->
+<!--                    <cellValueFactory>-->
+<!--                        <PropertyValueFactory property="actors"/>-->
+<!--                    </cellValueFactory>-->
+<!--                </TableColumn>-->
+<!--                 <TableColumn text="Director">-->
+<!--                    <cellValueFactory>-->
+<!--                        <PropertyValueFactory property="director"/>-->
+<!--                    </cellValueFactory>-->
+<!--                </TableColumn>-->
+
+
+            </columns>
+
+        </TableView>
+    </center>
+</BorderPane>
