@@ -3,9 +3,20 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
 <BorderPane fx:controller="sample.Controller"
             xmlns:fx="http://javafx.com/fxml">
 
+
+    <top>
+        <HBox>
+            <Label text="Filter Table:" />
+            <TextField fx:id="filterInput" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+        </HBox>
+
+    </top>
     <center>
         <TableView fx:id="movieDisplay">
 
@@ -16,11 +27,41 @@
                     </cellValueFactory>
                 </TableColumn>
 
-                <TableColumn text="Rating">
+                <TableColumn text="MovieID">
                     <cellValueFactory>
                         <PropertyValueFactory property="movieID"/>
                     </cellValueFactory>
                 </TableColumn>
+
+                <TableColumn text="Directors">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="directorNames"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Actors">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="actorNames"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Release Date">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="releaseDateString"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Description">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="plotDescription"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+<!--                <TableColumn text="Directors">-->
+<!--                    <cellValueFactory>-->
+<!--                        <PropertyValueFactory property="directorNames"/>-->
+<!--                    </cellValueFactory>-->
+<!--                </TableColumn>-->
 <!--                 <TableColumn text="Genre">-->
 <!--                    <cellValueFactory>-->
 <!--                        <PropertyValueFactory property="genre"/>-->
@@ -31,11 +72,7 @@
 <!--                        <PropertyValueFactory property="actors"/>-->
 <!--                    </cellValueFactory>-->
 <!--                </TableColumn>-->
-<!--                 <TableColumn text="Director">-->
-<!--                    <cellValueFactory>-->
-<!--                        <PropertyValueFactory property="director"/>-->
-<!--                    </cellValueFactory>-->
-<!--                </TableColumn>-->
+
 
 
             </columns>

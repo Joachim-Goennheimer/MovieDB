@@ -8,13 +8,14 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Director {
 
     private SimpleIntegerProperty directorID = new SimpleIntegerProperty();
     private SimpleStringProperty name = new SimpleStringProperty();
     private SimpleListProperty<Movie> directedMovies = new SimpleListProperty<>();
-    private ObservableList<Integer> directedMoviesIDs = FXCollections.observableArrayList();
+    private List<Integer> directedMoviesIDs = new ArrayList<>();
 
     public Director(int id, String name) {
 
@@ -22,10 +23,6 @@ public class Director {
         this.name.set(name);
     }
 
-    @Override
-    public String toString() {
-        return this.name.getValue();
-    }
 
     public int getDirectorID() {
         return directorID.get();
@@ -56,16 +53,18 @@ public class Director {
         this.directedMovies.set(directedMovies);
     }
 
-    public ObservableList<Integer> getDirectedMoviesIDs() {
+    public List<Integer> getDirectedMoviesIDs() {
         return directedMoviesIDs;
     }
 
-    public ObservableList<Integer> directedMoviesIDsProperty() {
-        return directedMoviesIDs;
-    }
 
     public void addMovieID(int movieID) {
         this.directedMoviesIDs.add(movieID);
 //        System.out.println("Added MovieID " + movieID + " for director " + this.name);
+    }
+
+    @Override
+    public String toString() {
+        return this.name.getValue();
     }
 }

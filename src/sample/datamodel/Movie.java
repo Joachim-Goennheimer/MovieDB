@@ -1,15 +1,26 @@
 package sample.datamodel;
 
 import javafx.beans.property.*;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class Movie {
 
     private SimpleIntegerProperty movieID = new SimpleIntegerProperty();
     private SimpleStringProperty title = new SimpleStringProperty();
+    private SimpleStringProperty plotDescription = new SimpleStringProperty();
     private SimpleListProperty genres = new SimpleListProperty();
-    private SimpleDateFormat releaseDate = new SimpleDateFormat();
+
+    private Date releaseDate = new Date();
+    private SimpleDateFormat inputFormater = new SimpleDateFormat("yyyy-MM-dd");
+    private SimpleDateFormat outputFormater = new SimpleDateFormat("dd.MM.yyyy");
+    private SimpleStringProperty releaseDateString = new SimpleStringProperty();
+
     private SimpleStringProperty description = new SimpleStringProperty();
     private SimpleDoubleProperty imdbRating = new SimpleDoubleProperty();
     private SimpleDoubleProperty userRating = new SimpleDoubleProperty();
@@ -18,8 +29,46 @@ public class Movie {
 
     private SimpleDoubleProperty generalRating = new SimpleDoubleProperty();
 
-    private SimpleListProperty<Director> directors = new SimpleListProperty<>();
-    private SimpleListProperty<Actor> actors = new SimpleListProperty<>();
+//    might not be needed later on
+    private ObservableList<Director> directors = FXCollections.observableArrayList();
+    private SimpleStringProperty directorNames = new SimpleStringProperty();
+//    might not be needed later on
+    private ObservableList<Actor> actors = FXCollections.observableArrayList();
+    private SimpleStringProperty actorNames = new SimpleStringProperty();
+
+
+
+
+
+    public void addDirector(Director director){
+        this.directors.add(director);
+
+//        Puts director names into String property to display in Tableview
+
+        if (this.directorNames.get() == null){
+            this.directorNames.set(director.getName());
+        }
+        else {
+            this.directorNames.set(directorNames.get() + ", " + director.getName());
+        }
+
+    }
+
+    public void addActor(Actor actor){
+        this.actors.add(actor);
+
+//        Puts actor names into String property to display in Tableview
+
+        if (this.actorNames.get() == null){
+            this.actorNames.set(actor.getName());
+        }
+        else {
+            this.actorNames.set(actorNames.get() + ", " + actor.getName());
+        }
+
+    }
+
+
 
 
     public int getMovieID() {
@@ -44,5 +93,83 @@ public class Movie {
 
     public void setTitle(String title) {
         this.title.set(title);
+    }
+
+    public void setDirectorNames(String directors){
+        this.directorNames.set(directors);
+    }
+
+    public void setActorNames(String actors){
+        this.actorNames.set(actors);
+    }
+
+    public String getDirectorNames(){
+        return directorNames.get();
+    }
+
+    public String getActorNames(){
+        return actorNames.get();
+    }
+
+    public String getPlotDescription() {
+        return plotDescription.get();
+    }
+
+    public SimpleStringProperty plotDescriptionProperty() {
+        return plotDescription;
+    }
+
+    public void setPlotDescription(String plotDescription) {
+
+        if (plotDescription.equals("")){
+            plotDescription = "n/a";
+        }
+
+        this.plotDescription.set(plotDescription);
+    }
+
+    public Date getReleaseDate() {
+        return releaseDate;
+    }
+
+    public String getReleaseDateString(){
+        return releaseDateString.get();
+    }
+
+    public void setReleaseDate(String releaseDateString) {
+
+        try {
+            this.releaseDate = inputFormater.parse(releaseDateString);
+            String formattedDate = outputFormater.format(releaseDate);
+            this.releaseDateString.set(formattedDate);
+        } catch (ParseException e){
+            this.releaseDate = null;
+            this.releaseDateString.set("n/a");
+        }
+
+    }
+
+    public double getImdbRating() {
+        return imdbRating.get();
+    }
+
+    public SimpleDoubleProperty imdbRatingProperty() {
+        return imdbRating;
+    }
+
+    public void setImdbRating(double imdbRating) {
+        this.imdbRating.set(imdbRating);
+    }
+
+    public int getNumbImdbRatings() {
+        return numbImdbRatings.get();
+    }
+
+    public SimpleIntegerProperty numbImdbRatingsProperty() {
+        return numbImdbRatings;
+    }
+
+    public void setNumbImdbRatings(int numbImdbRatings) {
+        this.numbImdbRatings.set(numbImdbRatings);
     }
 }

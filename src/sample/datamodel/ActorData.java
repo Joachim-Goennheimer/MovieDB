@@ -5,42 +5,43 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class DirectorData {
+public class ActorData {
+
 
     private static final String MOVIE_FILE = "movieproject.db";
 
 
-    private static HashMap<Integer, Director> DirectorId_DirectorMap = new HashMap<>();
+    private static HashMap<Integer, Actor> ActorID_ActorMap = new HashMap<>();
 
 
-    public static void loadDirectors(){
+    public static void loadActors(){
         try(BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))){
             String input;
-            boolean loadDirectors = false;
+            boolean loadActors = false;
 
             while ((input = inputReader.readLine()) != null){
 
-                if (loadDirectors){
+                if (loadActors){
 
                     if (input.contains("New_Entity")){
-                        loadDirectors = false;
+                        loadActors = false;
                     }
                     else {
 
                         String[] inputData = input.split("\",\"");
 
-                        int directorID = Integer.parseInt(inputData[0].replace("\"", ""));
+                        int actorID = Integer.parseInt(inputData[0].replace("\"", ""));
 
-                        Director director = new Director(directorID, inputData[1].replace("\"", ""));
-                        DirectorId_DirectorMap.put(directorID, director);
+                        Actor actor = new Actor(actorID, inputData[1].replace("\"", ""));
+                        ActorID_ActorMap.put(actorID, actor);
 
                     }
 
                 }
                 else {
-                    if (input.contains("New_Entity: \"director_id\",\"director_name\"")){
+                    if (input.contains("New_Entity: \"actor_id\",\"actor_name\"")){
                         System.out.println(input);
-                        loadDirectors = true;
+                        loadActors = true;
                     }
 
                 }
@@ -73,10 +74,10 @@ public class DirectorData {
 
                         String[] inputData = input.split("\",\"");
 
-                        int directorID = Integer.parseInt(inputData[0].replace("\"", ""));
+                        int actorID = Integer.parseInt(inputData[0].replace("\"", ""));
                         int movieID = Integer.parseInt(inputData[1].replace("\"", ""));
 
-                        DirectorId_DirectorMap.get(directorID).addMovieID(movieID);
+                        ActorID_ActorMap.get(actorID).addMovieID(movieID);
 
                     }
                 }
@@ -100,11 +101,11 @@ public class DirectorData {
 
     }
 
-    public static Director getDirectorByID(Integer directorID){
+    public static Actor getActorByID (Integer actorID){
 
-//        System.out.println("retriving director with ID: " + directorID);
-        if (DirectorId_DirectorMap.containsKey(directorID)){
-            return DirectorId_DirectorMap.get(directorID);
+//        System.out.println("retriving actor with ID: " + actorID);
+        if (ActorID_ActorMap.containsKey(actorID)){
+            return ActorID_ActorMap.get(actorID);
         }
         else {
             return null;
@@ -112,9 +113,6 @@ public class DirectorData {
 
     }
 
-    public static HashMap<Integer, Director> getDirectorId_DirectorMap() {
-        return DirectorId_DirectorMap;
-    }
 
 
 }
