@@ -9,7 +9,7 @@ public class RegisteredUserData {
 
     private static final String REGISTERED_USERS_FILE = "userRegister.dat";
 
-    private static User currentlyLoggedIn;
+    private static RegisteredUser currentlyLoggedIn;
 
     private static Map<String, RegisteredUser> registeredUsersMap = new HashMap<>();
 
@@ -44,14 +44,36 @@ public class RegisteredUserData {
 
     }
 
+
+    public static String loginUser(String username, String password){
+
+        String responseMessage = "Ups something went wrong";
+
+//        Could also check separately to give more detailed message but in this way it is more secure.
+        if (!registeredUsersMap.keySet().contains(username) || !registeredUsersMap.get(username).getPassword().equals(password)) {
+            responseMessage = "Invalid Username or Password";
+
+        }
+        else {
+
+            currentlyLoggedIn = registeredUsersMap.get(username);
+            responseMessage = "Login Successful";
+
+        }
+        return responseMessage;
+
+    }
+
+
+
     public static String registerNewUser(String username, String password){
 
-        String responseMessage = "Successfully registered";
+        String responseMessage = "Ups something went wrong";
 
-        String passwordMessage = validatePassword(password);
+        String passwordMessage = validateRegisterPassword(password);
 
 
-        if (!validateUserName(username)){
+        if (!validateRegisterUserName(username)){
             responseMessage = "Username already taken";
         }
         else if (!passwordMessage.equals("Password valid")){
@@ -62,13 +84,15 @@ public class RegisteredUserData {
             user.setUserName(username);
             user.setPassword(password);
             registeredUsersMap.put(username, user);
+            responseMessage = "Successfully registered";
+
         }
 
         return responseMessage;
 
     }
 
-    private static boolean validateUserName(String username){
+    private static boolean validateRegisterUserName(String username){
 
 //        to do: implement check for nonRegistered usernames
 
@@ -81,7 +105,7 @@ public class RegisteredUserData {
         return userNameIsValid;
     }
 
-    private static String validatePassword(String password){
+    private static String validateRegisterPassword(String password){
         String passwordResponseMessage = "Password valid";
 
 
@@ -154,4 +178,11 @@ public class RegisteredUserData {
 
     }
 
+    public static RegisteredUser getCurrentlyLoggedIn() {
+        return currentlyLoggedIn;
+    }
+
+    public static String getCurrentUserName(){
+        return currentlyLoggedIn.getUserName();
+    }
 }

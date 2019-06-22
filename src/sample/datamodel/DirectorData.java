@@ -31,7 +31,7 @@ public class DirectorData {
 
                         int directorID = Integer.parseInt(inputData[0].replace("\"", ""));
 
-                        Director director = new Director(directorID, inputData[1].replace("\"", ""));
+                        Director director = new Director(directorID, inputData[1].replace("\"", "").trim());
                         DirectorId_DirectorMap.put(directorID, director);
 
                     }

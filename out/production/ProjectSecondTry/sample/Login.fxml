@@ -13,13 +13,16 @@
        <Label layoutX="50.0" layoutY="70">Login</Label>
        <TextField fx:id="userName" promptText="Username" layoutX="20.0" layoutY="100.0" />
        <PasswordField fx:id="password" promptText="Password" layoutX="20" layoutY="130"/>
-       <Button fx:id="loginButton" layoutX="50.0" layoutY="170.0" mnemonicParsing="false" onAction="#login" text="Login" />
+       <Button fx:id="loginButton" layoutX="50.0" layoutY="170.0" mnemonicParsing="false" onAction="#login" text="Login"/>
+       <Label fx:id="loginResponseLabel" layoutX="20.0" layoutY="200"/>
+
 
        <Label layoutX="300.0" layoutY="70">Register</Label>
        <TextField fx:id="registerUserName" promptText="Username" layoutX="300.0" layoutY="100.0" />
-       <PasswordField fx:id="registerPasswort" promptText="Password" layoutX="300" layoutY="130"/>
-       <PasswordField fx:id="registerPasswortCheck" promptText="Verify Password" layoutX="300" layoutY="160"/>
-      <Button fx:id="registerButton" layoutX="350.0" layoutY="200.0" mnemonicParsing="false" onAction="#registerUser" text="Register" />
+       <PasswordField fx:id="registerPassword" promptText="Password" layoutX="300" layoutY="130"/>
+       <PasswordField fx:id="registerPasswordCheck" promptText="Verify Password" layoutX="300" layoutY="160"/>
+       <Button fx:id="registerButton" layoutX="350.0" layoutY="200.0" mnemonicParsing="false" onAction="#registerUser" text="Register" />
+       <Label fx:id="registerUserLabel" layoutX="200.0" layoutY="230"/>
 
    </children>
 </AnchorPane>

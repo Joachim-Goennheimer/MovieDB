@@ -13,8 +13,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-//        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+//        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         primaryStage.setTitle("Movie DB");
         primaryStage.setScene(new Scene(root, 500, 300));
         primaryStage.show();
@@ -23,6 +23,7 @@ public class Main extends Application {
     @Override
     public void stop() throws Exception {
 
+        System.out.println("Stop method called");
         InteractiveModeLoader.saveDataInteractiveMode();
         super.stop();
     }

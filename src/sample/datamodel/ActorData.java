@@ -32,7 +32,7 @@ public class ActorData {
 
                         int actorID = Integer.parseInt(inputData[0].replace("\"", ""));
 
-                        Actor actor = new Actor(actorID, inputData[1].replace("\"", ""));
+                        Actor actor = new Actor(actorID, inputData[1].replace("\"", "").trim());
                         ActorID_ActorMap.put(actorID, actor);
 
                     }

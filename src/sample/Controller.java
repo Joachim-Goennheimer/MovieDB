@@ -3,6 +3,7 @@ package sample;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import sample.datamodel.*;
@@ -15,9 +16,17 @@ public class Controller {
     @FXML
     private TextField filterInput;
 
+    @FXML
+    private Label currentUser;
+
     private NonRegisteredUserData nonRegisteredUserData;
 
     public void initialize(){
+
+//        Display current Users username
+
+        currentUser.setText(RegisteredUserData.getCurrentUserName());
+//        currentUser.setText("Max Mustermann");
 
 
 //        1. Load Data Organisation Hashmaps --> see connections between different data types. This is necessary to later load the data types as
