@@ -40,7 +40,7 @@ public class ActorData {
                 }
                 else {
                     if (input.contains("New_Entity: \"actor_id\",\"actor_name\"")){
-                        System.out.println(input);
+//                        System.out.println(input);
                         loadActors = true;
                     }
 
@@ -83,7 +83,7 @@ public class ActorData {
                 }
                 else {
                     if (input.contains("New_Entity: \"director_id\",\"movie_id\"")){
-                        System.out.println(input);
+//                        System.out.println(input);
                         loadCorrespondingMovies = true;
                     }
 

@@ -39,7 +39,7 @@ public class DirectorData {
                 }
                 else {
                     if (input.contains("New_Entity: \"director_id\",\"director_name\"")){
-                        System.out.println(input);
+//                        System.out.println(input);
                         loadDirectors = true;
                     }
 
@@ -82,7 +82,7 @@ public class DirectorData {
                 }
                 else {
                     if (input.contains("New_Entity: \"director_id\",\"movie_id\"")){
-                        System.out.println(input);
+//                        System.out.println(input);
                         loadCorrespondingMovies = true;
                     }
 

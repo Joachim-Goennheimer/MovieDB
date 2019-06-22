@@ -13,7 +13,7 @@
     <top>
         <HBox>
             <Label text="Filter Table:" />
-            <TextField fx:id="filterInput" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="filterInput" prefWidth="500" HBox.hgrow="NEVER" />
         </HBox>
 
     </top>
@@ -21,7 +21,7 @@
         <TableView fx:id="movieDisplay">
 
             <columns>
-                <TableColumn text="Title">
+                <TableColumn text="Title" prefWidth="300">
                     <cellValueFactory>
                         <PropertyValueFactory property="title"/>
                     </cellValueFactory>
@@ -30,6 +30,12 @@
                 <TableColumn text="MovieID">
                     <cellValueFactory>
                         <PropertyValueFactory property="movieID"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Genre">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="genreNames"/>
                     </cellValueFactory>
                 </TableColumn>
 
@@ -48,6 +54,18 @@
                 <TableColumn text="Release Date">
                     <cellValueFactory>
                         <PropertyValueFactory property="releaseDateString"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="IMDB Rating">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="imdbRating"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="IMDB Votes">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="numbImdbRatings"/>
                     </cellValueFactory>
                 </TableColumn>
 

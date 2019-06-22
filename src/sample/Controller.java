@@ -15,7 +15,7 @@ public class Controller {
     @FXML
     private TextField filterInput;
 
-    private UserData userData;
+    private NonRegisteredUserData nonRegisteredUserData;
 
     public void initialize(){
 
@@ -25,15 +25,6 @@ public class Controller {
 //        2. Load Directors, Actors and Users as they only need the key of the movies and not the actual name
 //        3. Load the movies as they need all the explicit data (names of directors, actors etc.) and therefore must utilize the Hashmaps of the
 //           DataOrganisation Class.
-
-
-        DataOrganisation.load_MovieID_DirectorID_Map();
-        DataOrganisation.load_MovieID_ActorID_Map();
-
-
-        DirectorData.loadDirectors();
-        ActorData.loadActors();
-        MovieData.loadMovies();
 
 //        MovieData.loadDirectors();
 
@@ -51,14 +42,18 @@ public class Controller {
                     return true;
                 }
 
-//                Compare Movie title and Directorname
                 String lowerCaseFilter = newValue.toLowerCase();
 
                 if (movie.getTitle().toLowerCase().contains(lowerCaseFilter)) {
-                    return true; // Filter matches first name.
-                } else if (movie.getDirectorNames().toLowerCase().contains(lowerCaseFilter)) {
-                    return true; // Filter matches last name.
-                } else if (movie.getActorNames().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; // Filter matches movie title
+                }
+                else if (movie.getDirectorNames().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; // Filter matches director name.
+                }
+                else if (movie.getActorNames().toLowerCase().contains(lowerCaseFilter)) {
+                    return true;
+                }
+                else if (movie.getGenreNames().toLowerCase().contains(lowerCaseFilter)){
                     return true;
                 }
                 return false; // Does not match.
@@ -66,9 +61,9 @@ public class Controller {
         });
 
 //        need to wrap Filtered list into Sorted list because filtered list cannot be sorted --> would loose this functionality
-        SortedList<Movie> sortedmovies = new SortedList<>(movies);
-        sortedmovies.comparatorProperty().bind(movieDisplay.comparatorProperty());
-        movieDisplay.setItems(movies);
+        SortedList<Movie> sortedMovies = new SortedList<>(movies);
+        sortedMovies.comparatorProperty().bind(movieDisplay.comparatorProperty());
+        movieDisplay.setItems(sortedMovies);
     }
 
 

@@ -8,20 +8,21 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Movie {
 
     private SimpleIntegerProperty movieID = new SimpleIntegerProperty();
     private SimpleStringProperty title = new SimpleStringProperty();
     private SimpleStringProperty plotDescription = new SimpleStringProperty();
-    private SimpleListProperty genres = new SimpleListProperty();
+    private List<String> genres = new ArrayList<>();
+    private SimpleStringProperty genreNames = new SimpleStringProperty();
 
     private Date releaseDate = new Date();
     private SimpleDateFormat inputFormater = new SimpleDateFormat("yyyy-MM-dd");
     private SimpleDateFormat outputFormater = new SimpleDateFormat("dd.MM.yyyy");
     private SimpleStringProperty releaseDateString = new SimpleStringProperty();
 
-    private SimpleStringProperty description = new SimpleStringProperty();
     private SimpleDoubleProperty imdbRating = new SimpleDoubleProperty();
     private SimpleDoubleProperty userRating = new SimpleDoubleProperty();
     private SimpleIntegerProperty numbImdbRatings = new SimpleIntegerProperty();
@@ -30,7 +31,7 @@ public class Movie {
     private SimpleDoubleProperty generalRating = new SimpleDoubleProperty();
 
 //    might not be needed later on
-    private ObservableList<Director> directors = FXCollections.observableArrayList();
+    private List<Director> directors = new ArrayList();
     private SimpleStringProperty directorNames = new SimpleStringProperty();
 //    might not be needed later on
     private ObservableList<Actor> actors = FXCollections.observableArrayList();
@@ -65,6 +66,22 @@ public class Movie {
         else {
             this.actorNames.set(actorNames.get() + ", " + actor.getName());
         }
+
+    }
+
+    public void addGenres(List<String> genres){
+
+        this.genres.addAll(genres);
+
+        for (String genre: genres){
+            if (this.genreNames.get() == null){
+                this.genreNames.set(genre);
+            }
+            else if (!this.genreNames.get().contains(genre)){
+                this.genreNames.set(this.genreNames.getValue() + ", " + genre);
+            }
+        }
+
 
     }
 
@@ -110,6 +127,12 @@ public class Movie {
     public String getActorNames(){
         return actorNames.get();
     }
+
+    public String getGenreNames(){
+        return genreNames.get();
+    }
+
+    public List<String> getGenres(){ return genres; }
 
     public String getPlotDescription() {
         return plotDescription.get();
@@ -160,6 +183,8 @@ public class Movie {
     public void setImdbRating(double imdbRating) {
         this.imdbRating.set(imdbRating);
     }
+
+
 
     public int getNumbImdbRatings() {
         return numbImdbRatings.get();

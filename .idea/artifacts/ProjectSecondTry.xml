@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="ProjectSecondTry">
+    <output-path>$PROJECT_DIR$/out/artifacts/ProjectSecondTry</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="height" value="1000" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="MovieDB" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+        <option name="width" value="1200" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="ProjectSecondTry.jar">
+        <element id="module-output" name="ProjectSecondTry" />
+      </element>
+    </root>
+  </artifact>
+</component>

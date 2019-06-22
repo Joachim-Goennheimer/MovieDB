@@ -7,10 +7,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class MovieData {
 
@@ -24,7 +21,8 @@ public class MovieData {
 
         Map<Integer, List<Integer>> MovieID_DirectorID_Map = DataOrganisation.getMovieID_DirectorID_Map();
         Map<Integer, List<Integer>> MovieID_ActorID_Map = DataOrganisation.getMovieID_ActorID_Map();
-
+        Map<Integer, List<String>> MovieID_GenreIDMap = DataOrganisation.getMovieID_GenreMap();
+        Set<Integer> verifyDuplicateSet = new HashSet<>();
 
         try(BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))){
             String input;
@@ -43,51 +41,85 @@ public class MovieData {
 
                         int movieID = Integer.parseInt(inputData[0].replace("\"", ""));
 
-                        Movie movie = new Movie();
-                        movie.setMovieID(movieID);
-                        movie.setTitle(inputData[1]);
-                        movie.setPlotDescription(inputData[2]);
-                        movie.setReleaseDate(inputData[4]);
+//                        checks whether movie is already loaded.
+                        if (!verifyDuplicateSet.contains(movieID)) {
+
+                            Movie movie = new Movie();
+                            movie.setMovieID(movieID);
+                            movie.setTitle(inputData[1]);
+                            movie.setPlotDescription(inputData[2]);
+                            movie.setReleaseDate(inputData[4]);
+                            try {
+
+                                movie.setNumbImdbRatings(Integer.parseInt(inputData[5]));
+
+                            } catch (NumberFormatException e){
+                                movie.setNumbImdbRatings(0);
+                            }
+
+                            try {
+
+                                movie.setImdbRating(Double.parseDouble(inputData[6].replace("\"", "")));
+
+                            } catch (NumberFormatException e){
+                                movie.setImdbRating(0.0);
+                            }
 
 
 //                        getting directors
 
-                        try {
-                            for (Integer directorID: MovieID_DirectorID_Map.get(movieID)){
+                            try {
+                                for (Integer directorID : MovieID_DirectorID_Map.get(movieID)) {
 
-                                Director director = DirectorData.getDirectorByID(directorID);
-                                movie.addDirector(director);
-                            }
+                                    Director director = DirectorData.getDirectorByID(directorID);
+                                    movie.addDirector(director);
+                                }
 
-                        } catch (Exception e){
-                            movie.setDirectorNames("n/a");
+                            } catch (Exception e) {
+                                movie.setDirectorNames("n/a");
 //                            System.out.println("No director for: " + movie.getTitle());
 
-                        }
-
-//                        getting actors
-                        try {
-                            for (Integer actorID: MovieID_ActorID_Map.get(movieID)){
-
-                                Actor actor = ActorData.getActorByID(actorID);
-                                movie.addActor(actor);
                             }
 
-                        } catch (Exception e){
-                            movie.setActorNames("n/a");
+//                        getting actors
+                            try {
+                                for (Integer actorID : MovieID_ActorID_Map.get(movieID)) {
+
+                                    Actor actor = ActorData.getActorByID(actorID);
+                                    movie.addActor(actor);
+                                }
+
+                            } catch (Exception e) {
+                                movie.setActorNames("n/a");
 //                            System.out.println("No actor for: " + movie.getTitle());
 
-                        }
+                            }
 
-                        movies.add(movie);
+//                        getting genres
+
+                            try {
+
+                                List<String> genres = MovieID_GenreIDMap.get(movieID);
+                                movie.addGenres(genres);
+
+
+                            } catch (Exception e) {
+                                System.out.println("No error should happen here");
+//                            System.out.println("No actor for: " + movie.getTitle());
+
+                            }
+
+                            verifyDuplicateSet.add(movieID);
+                            movies.add(movie);
 //                        System.out.println(movie.getReleaseDate().toLocalizedPattern());
 
+                        }
                     }
 
                 }
                 else {
                     if (input.contains("New_Entity: \"movie_id\",\"movie_title\"")){
-                        System.out.println(input);
+//                        System.out.println(input);
                         loadMovies = true;
                     }
 
@@ -103,27 +135,6 @@ public class MovieData {
 
     }
 
-//    public static void loadDirectors(){
-//
-//        DirectorData directorData = new DirectorData();
-//        directorData.loadDirectors();
-//        directorData.loadCorrespondingMovies();
-//
-//        HashMap<Integer, Director> directorMovieMap = directorData.getDirectorId_DirectorMap();
-//
-//        Set<Integer> directorIDs = directorMovieMap.keySet();
-//
-//        for (Integer directorID: directorIDs) {
-//
-//
-//            System.out.println("Director Name: " + directorMovieMap.get(directorID).getName());
-//            System.out.println("Movies: " + directorMovieMap.get(directorID).getDirectedMoviesIDs());
-//            System.out.println("Director ID: " + directorID);
-//
-//        }
-//
-//
-//    }
 
     public void save() throws IOException{
 

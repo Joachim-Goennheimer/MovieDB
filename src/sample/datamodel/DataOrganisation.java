@@ -17,6 +17,7 @@ public class DataOrganisation {
     private static Map<Integer, List<Integer>> MovieID_DirectorID_Map = new HashMap<>();
     private static Map<Integer, List<Integer>> ActorID_MovieID_Map = new HashMap<>();
     private static Map<Integer, List<Integer>> MovieID_ActorID_Map = new HashMap<>();
+    private static Map<Integer, List<String>> MovieID_GenreMap = new HashMap<>();
 
 
     public static void load_DirectorID_MovieID_Map(){
@@ -60,7 +61,7 @@ public class DataOrganisation {
                 }
                 else {
                     if (input.contains("New_Entity: \"director_id\",\"movie_id\"")){
-                        System.out.println(input);
+//                        System.out.println(input);
                         loadData = true;
                     }
 
@@ -98,17 +99,17 @@ public class DataOrganisation {
 
                         String[] inputData = input.split("\",\"");
 
-                        int directorID = Integer.parseInt(inputData[0].replace("\"", ""));
+                        int actorID = Integer.parseInt(inputData[0].replace("\"", ""));
                         int movieID = Integer.parseInt(inputData[1].replace("\"", ""));
 
                         if (MovieID_ActorID_Map.containsKey(movieID)) {
-                            MovieID_ActorID_Map.get(movieID).add(directorID);
+                            MovieID_ActorID_Map.get(movieID).add(actorID);
 //                            System.out.println("To movie " + movieID + " added actor " + MovieID_ActorID_Map.get(movieID));
                         }
                         else {
-                            List<Integer> directorIDs = new ArrayList<>();
-                            directorIDs.add(directorID);
-                            MovieID_ActorID_Map.put(movieID, directorIDs);
+                            List<Integer> actorIDs = new ArrayList<>();
+                            actorIDs.add(actorID);
+                            MovieID_ActorID_Map.put(movieID, actorIDs);
 //                            System.out.println("For " + movieID + " added new List with actor  " + MovieID_ActorID_Map.get(movieID));
 
                         }
@@ -118,7 +119,62 @@ public class DataOrganisation {
                 }
                 else {
                     if (input.contains("New_Entity: \"actor_id\",\"movie_id\"")){
-                        System.out.println(input);
+//                        System.out.println(input);
+                        loadData = true;
+                    }
+
+                }
+
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
+
+
+    }
+
+    public static void load_MovieID_GenreMap(){
+
+        try(BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))){
+            String input;
+            boolean loadData = false;
+
+            while ((input = inputReader.readLine()) != null){
+
+                if (loadData){
+
+                    if (input.contains("New_Entity")){
+                        loadData = false;
+                    }
+                    else {
+
+                        String[] inputData = input.split("\",\"");
+
+                        int movieID = Integer.parseInt(inputData[0].replace("\"", ""));
+                        String genre = inputData[3];
+
+                        if (MovieID_GenreMap.containsKey(movieID)) {
+                            MovieID_GenreMap.get(movieID).add(genre);
+                        }
+                        else {
+                            List<String> Genres = new ArrayList<>();
+                            if (genre.contains("no genres")){
+                                genre = "n/a";
+                            }
+                            Genres.add(genre);
+                            MovieID_GenreMap.put(movieID, Genres);
+
+                        }
+
+                    }
+
+                }
+                else {
+                    if (input.contains("New_Entity: \"movie_id\",\"movie_title\"")){
+//                        System.out.println(input);
                         loadData = true;
                     }
 
@@ -158,5 +214,9 @@ public class DataOrganisation {
 
     public static Map<Integer, List<Integer>> getMovieID_ActorID_Map() {
         return MovieID_ActorID_Map;
+    }
+
+    public static Map<Integer, List<String>> getMovieID_GenreMap() {
+        return MovieID_GenreMap;
     }
 }
