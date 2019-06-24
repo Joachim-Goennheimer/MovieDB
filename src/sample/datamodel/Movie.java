@@ -20,11 +20,12 @@ public class Movie {
 
     private Date releaseDate = new Date();
     private SimpleDateFormat inputFormater = new SimpleDateFormat("yyyy-MM-dd");
-    private SimpleDateFormat outputFormater = new SimpleDateFormat("dd.MM.yyyy");
+    private SimpleDateFormat outputFormater = new SimpleDateFormat("yyyy.MM.dd");
     private SimpleStringProperty releaseDateString = new SimpleStringProperty();
 
     private SimpleDoubleProperty imdbRating = new SimpleDoubleProperty();
-    private SimpleDoubleProperty userRating = new SimpleDoubleProperty();
+    private SimpleDoubleProperty currentUserRating = new SimpleDoubleProperty();
+    private SimpleStringProperty currentUserRatingString = new SimpleStringProperty();
     private SimpleIntegerProperty numbImdbRatings = new SimpleIntegerProperty();
     private SimpleIntegerProperty numbUserRatings = new SimpleIntegerProperty();
 
@@ -196,5 +197,72 @@ public class Movie {
 
     public void setNumbImdbRatings(int numbImdbRatings) {
         this.numbImdbRatings.set(numbImdbRatings);
+    }
+
+    public double getCurrentUserRating() {
+        return currentUserRating.get();
+    }
+
+//    public SimpleDoubleProperty currentUserRatingProperty() {
+//        System.out.println("currentUserRatingProperty invoked");
+//        return currentUserRating;
+//    }
+
+    public void setCurrentUserRating(double currentUserRating) {
+//        this method does some validation based on what response code it receives.
+//        -1: no information in data
+//        -2: user has tried to enter a non-numerical value
+
+        this.currentUserRating.set(currentUserRating);
+
+        if (currentUserRating == -1){
+            this.currentUserRatingString.set("n/a");
+        }
+        else if (currentUserRating == -2){
+            if (currentUserRatingString.get().equals("Please enter a number")){
+                this.currentUserRatingString.set("YOU HAVE TO ENTER A NUMBER");
+            }
+            else {
+                this.currentUserRatingString.set("Please enter a number");
+
+            }
+        }
+        else {
+            this.currentUserRatingString.set(String.valueOf(currentUserRating));
+
+        }
+
+    }
+
+    public String getCurrentUserRatingString() {
+        return currentUserRatingString.get();
+    }
+
+    public SimpleStringProperty currentUserRatingStringProperty() {
+//        System.out.println("currentUserRatingStringProperty invoked");
+        return currentUserRatingString;
+    }
+
+    public void setCurrentUserRatingString(String currentUserRatingString) {
+//        System.out.println("setCurrentUserRatingString invoked");
+
+        this.currentUserRatingString.set(currentUserRatingString);
+    }
+
+    public double getGeneralRating() {
+        return generalRating.get();
+    }
+
+    public SimpleDoubleProperty generalRatingProperty() {
+        return generalRating;
+    }
+
+    public void setGeneralRating(double generalRating) {
+        this.generalRating.set(generalRating);
+    }
+
+    @Override
+    public String toString() {
+        return title.get();
     }
 }

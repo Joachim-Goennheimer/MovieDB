@@ -75,4 +75,8 @@ public class NonRegisteredUserData {
         }
 
     }
+
+    public static List<NonRegisteredUser> getNonRegisteredUsers() {
+        return nonRegisteredUsers;
+    }
 }

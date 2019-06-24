@@ -22,13 +22,43 @@ public class StaticModeLoader extends DataLoader {
 
 
 
+    public static void loadDataStaticMode(String[] userArguments){
+
+        processUserArguments(userArguments);
+
+        if (checkForInvalidInput()){
+            loadBaseData();
+            MovieData.loadMovies();
+
+            List<Movie> filteredMovies = filterMovies();
+            for (Movie movie: filteredMovies){
+                System.out.println("********************************************");
+                System.out.println("Movie Title: " + movie.getTitle());
+                System.out.println("Genres: " + movie.getGenreNames());
+                System.out.println("Directors: " + movie.getDirectorNames());
+                System.out.println("********************************************");
+
+            }
+
+
+        }
+        else {
+            System.out.println("Unfortunately no valid arguments were entered.");
+            System.out.println("A valid argument has the form --film='myfilm'.");
+            System.out.println("Please try again.");
+        }
+
+
+
+
+    }
 
     private static void processUserArguments(String[] userArguments){
 //        method that processes the arguments a user has passed in static mode and sets the instance variables to the appropriate values.
 
 
         for (String argument: userArguments){
-             argument = argument.toLowerCase();
+            argument = argument.toLowerCase();
 
             if (argument.contains("film=")|| argument.contains("movie=")){
                 loadMovie = true;
@@ -106,35 +136,6 @@ public class StaticModeLoader extends DataLoader {
 
     }
 
-    public static void loadDataStaticMode(String[] userArguments){
-
-        processUserArguments(userArguments);
-
-        if (checkForInvalidInput()){
-            loadBaseData();
-
-            List<Movie> filteredMovies = filterMovies();
-            for (Movie movie: filteredMovies){
-                System.out.println("********************************************");
-                System.out.println("Movie Title: " + movie.getTitle());
-                System.out.println("Genres: " + movie.getGenreNames());
-                System.out.println("Directors: " + movie.getDirectorNames());
-                System.out.println("********************************************");
-
-            }
-
-
-        }
-        else {
-            System.out.println("Unfortunately no valid arguments were entered.");
-            System.out.println("A valid argument has the form --film='myfilm'.");
-            System.out.println("Please try again.");
-        }
-
-
-
-
-    }
 
     private static boolean checkForInvalidInput(){
 //        method is called to check whether all of the user arguments were invalid. In that case it doesn't make sense to even load the data.

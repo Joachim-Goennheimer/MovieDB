@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import sample.datamodel.MovieData;
 import sample.datamodel.RegisteredUserData;
 
 import java.io.IOException;
@@ -72,6 +73,10 @@ public class LoginController {
 
 
     public void loadMainWindow(Event event){
+
+//        loading movies here because need logged in user first in order to retrieve user ratings
+
+        MovieData.loadMovies(RegisteredUserData.getCurrentlyLoggedIn());
 
         Stage primaryStage = new Stage();
 

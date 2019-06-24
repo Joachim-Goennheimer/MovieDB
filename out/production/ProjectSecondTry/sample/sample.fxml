@@ -10,6 +10,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
 <BorderPane fx:controller="sample.Controller"
             xmlns:fx="http://javafx.com/fxml">
 
@@ -37,7 +38,7 @@
                         <Label fx:id="currentUser" />
                     </HBox>
 
-                    <Button text="Get Recommendations"/>
+                    <Button onAction="#getRecommendations" text="Get Recommendations"/>
                 </VBox>
 
             </children>
@@ -49,17 +50,26 @@
         <TableView fx:id="movieDisplay">
 
             <columns>
+
+
+
+                <TableColumn fx:id="userRatingColumn" text="Your Rating">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="currentUserRatingString"/>
+                    </cellValueFactory>
+                </TableColumn>
+
                 <TableColumn text="Title" prefWidth="300">
                     <cellValueFactory>
                         <PropertyValueFactory property="title"/>
                     </cellValueFactory>
                 </TableColumn>
 
-<!--                <TableColumn text="MovieID">-->
-<!--                    <cellValueFactory>-->
-<!--                        <PropertyValueFactory property="movieID"/>-->
-<!--                    </cellValueFactory>-->
-<!--                </TableColumn>-->
+                <TableColumn text="MovieID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="movieID"/>
+                    </cellValueFactory>
+                </TableColumn>
 
                 <TableColumn text="Genre" prefWidth="100">
                     <cellValueFactory>
@@ -121,9 +131,17 @@
 <!--                </TableColumn>-->
 
 
-
             </columns>
 
         </TableView>
     </center>
+
+    <right>
+
+        <ListView fx:id="recommendationView">
+
+        </ListView>
+
+
+    </right>
 </BorderPane>

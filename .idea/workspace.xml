@@ -7,13 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jnlp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/InteractiveModeLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/InteractiveModeLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/StaticModeLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/StaticModeLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/MovieData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/MovieData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/InteractiveModeLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/InteractiveModeLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/ActorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/ActorData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/DirectorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/DirectorData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/StaticModeLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/StaticModeLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/MovieData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/MovieData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userRegister.dat" beforeDir="false" afterPath="$PROJECT_DIR$/userRegister.dat" afterDir="false" />
     </list>
@@ -75,23 +91,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="288">
+              <caret line="111" column="68" selection-start-line="111" selection-start-column="68" selection-end-line="111" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,10 +104,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="264">
+              <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#8606#8607#0" expanded="true" />
+                <element signature="e#8644#8645#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1479">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,21 +129,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieproject.db">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="21003" column="160" selection-start-line="21003" selection-start-column="157" selection-end-line="21003" selection-end-column="160" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="94" column="25" lean-forward="true" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+            <state relative-caret-position="314">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/DirectorData.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="33" column="106" selection-start-line="33" selection-start-column="106" selection-end-line="33" selection-end-column="106" />
+            <state relative-caret-position="162">
+              <caret line="213" column="22" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7079#7080#0" expanded="true" />
+                <element signature="e#7121#7122#0" expanded="true" />
+                <element signature="e#7180#7181#0" expanded="true" />
+                <element signature="e#7216#7217#0" expanded="true" />
+                <element signature="e#7274#7275#0" expanded="true" />
+                <element signature="e#7327#7328#0" expanded="true" />
+                <element signature="e#7373#7374#0" expanded="true" />
+                <element signature="e#7400#7401#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/MovieData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2183">
+              <caret line="314" column="31" selection-start-line="314" selection-start-column="31" selection-end-line="314" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,34 +181,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/ActorData.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+            <state relative-caret-position="262">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Login.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/InteractiveModeLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#1117#1118#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,27 +199,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="185" column="15" selection-start-line="185" selection-start-column="15" selection-end-line="185" selection-end-column="15" />
+            <state relative-caret-position="1170">
+              <caret line="78" column="67" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4821#4822#0" expanded="true" />
-                <element signature="e#4861#4862#0" expanded="true" />
-                <element signature="e#4913#4914#0" expanded="true" />
-                <element signature="e#4945#4946#0" expanded="true" />
+                <element signature="e#2586#2587#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,11 +228,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>New_entity</find>
-      <find>through the eyes of several</find>
-      <find>Days of Summer</find>
-      <find>Matthew Warchus</find>
-      <find>add</find>
       <find>Peter Farrelly</find>
       <find>29908</find>
       <find>9097</find>
@@ -236,8 +249,15 @@
       <find>no genres listed</find>
       <find>setPlo</find>
       <find>System.out</find>
-      <find>New_Entity</find>
       <find>Sarah Cal</find>
+      <find>setCu</find>
+      <find>angela garcia</find>
+      <find>Jessica Sher</find>
+      <find>Michelle Taylor</find>
+      <find>similarTasteMap</find>
+      <find>allUsersWithSimilarTasteMap</find>
+      <find>New_Entity</find>
+      <find>303</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -257,25 +277,25 @@
         <option value="$PROJECT_DIR$/src/sample/InteractiveModeHandler.java" />
         <option value="$PROJECT_DIR$/src/sample/StaticModeHandler.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/DataOrganisation.java" />
-        <option value="$PROJECT_DIR$/src/sample/StaticModeLoader.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/Movie.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/MovieData.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/UserData.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUser.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java" />
-        <option value="$PROJECT_DIR$/src/sample/InteractiveModeLoader.java" />
-        <option value="$PROJECT_DIR$/src/sample/DataLoader.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/User.java" />
         <option value="$PROJECT_DIR$/src/sample/Login.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/ActorData.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/DirectorData.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/DataLoader.java" />
+        <option value="$PROJECT_DIR$/src/sample/StaticModeLoader.java" />
+        <option value="$PROJECT_DIR$/src/sample/InteractiveModeLoader.java" />
+        <option value="$PROJECT_DIR$/src/sample/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/MovieData.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/Movie.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/User.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
       </list>
     </option>
   </component>
@@ -476,16 +496,15 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1559565796796" duration="558000" />
-      <workItem from="1559576711597" duration="83308000" />
+      <workItem from="1559576711597" duration="116317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85168000" />
+    <option name="totallyTimeSpent" value="118177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23462088" />
       <window_info id="Structure" order="1" weight="0.24964234" />
@@ -496,7 +515,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3433735" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5385542" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -638,70 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/StaticModeLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1124">
-          <caret line="144" column="9" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2535">
-          <caret line="181" selection-start-line="181" selection-end-line="181" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2987#2988#0" expanded="true" />
-            <element signature="e#3023#3024#0" expanded="true" />
-            <element signature="e#3077#3078#0" expanded="true" />
-            <element signature="e#3107#3108#0" expanded="true" />
-            <element signature="e#3150#3151#0" expanded="true" />
-            <element signature="e#3191#3192#0" expanded="true" />
-            <element signature="e#3223#3224#0" expanded="true" />
-            <element signature="e#3257#3258#0" expanded="true" />
-            <element signature="e#3308#3309#0" expanded="true" />
-            <element signature="e#3336#3337#0" expanded="true" />
-            <element signature="e#3378#3379#0" expanded="true" />
-            <element signature="e#3415#3416#0" expanded="true" />
-            <element signature="e#3880#3881#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
-            <element signature="e#3985#3986#0" expanded="true" />
-            <element signature="e#4023#4024#0" expanded="true" />
-            <element signature="e#4268#4269#0" expanded="true" />
-            <element signature="e#4302#4303#0" expanded="true" />
-            <element signature="e#4837#4838#0" expanded="true" />
-            <element signature="e#4876#4877#0" expanded="true" />
-            <element signature="e#4932#4933#0" expanded="true" />
-            <element signature="e#4965#4966#0" expanded="true" />
-            <element signature="e#5017#5018#0" expanded="true" />
-            <element signature="e#5064#5065#0" expanded="true" />
-            <element signature="e#5103#5104#0" expanded="true" />
-            <element signature="e#5147#5148#0" expanded="true" />
-            <element signature="e#5209#5210#0" expanded="true" />
-            <element signature="e#5247#5248#0" expanded="true" />
-            <element signature="e#5306#5307#0" expanded="true" />
-            <element signature="e#5363#5364#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieproject.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1800">
-          <caret line="188669" column="10" selection-start-line="188669" selection-start-column="1" selection-end-line="188669" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/LoginExample.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -719,118 +674,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/userRegister.dat">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/MovieData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="109" column="29" lean-forward="true" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/InteractiveModeLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="185" column="15" selection-start-line="185" selection-start-column="15" selection-end-line="185" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4821#4822#0" expanded="true" />
-            <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#4913#4914#0" expanded="true" />
-            <element signature="e#4945#4946#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Login.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/datamodel/ActorData.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -852,13 +695,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+    <entry file="uml://JAVA/sample">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>sample</OriginalElement>
+          <nodes>
+            <node x="" y="">sample.datamodel.NonRegisteredUserData</node>
+            <node x="" y="">sample.datamodel.NonRegisteredUser</node>
+            <node x="" y="">sample.Main</node>
+            <node x="" y="">sample.StaticModeLoader</node>
+            <node x="" y="">sample.datamodel.DataOrganisation</node>
+            <node x="" y="">sample.datamodel.DirectorData</node>
+            <node x="" y="">sample.datamodel.RegisteredUser</node>
+            <node x="" y="">sample.DataLoader</node>
+            <node x="" y="">sample.Controller</node>
+            <node x="" y="">sample.InteractiveModeLoader</node>
+            <node x="" y="">sample.datamodel.User</node>
+            <node x="" y="">sample.datamodel.RecommendationHandler</node>
+            <node x="" y="">sample.datamodel.RegisteredUserData</node>
+            <node x="" y="">sample.datamodel.Movie</node>
+            <node x="" y="">sample.datamodel.MovieData</node>
+            <node x="" y="">sample.datamodel.Director</node>
+            <node x="" y="">sample.datamodel.Actor</node>
+            <node x="" y="">sample.LoginController</node>
+            <node x="" y="">sample.datamodel.ActorData</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5741823046318141" x="842.7598185876885" y="1443.176962974129" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="94" column="25" lean-forward="true" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/StaticModeLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/InteractiveModeLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Login.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieproject.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21003" column="160" selection-start-line="21003" selection-start-column="157" selection-end-line="21003" selection-end-column="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="67" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2586#2587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8606#8607#0" expanded="true" />
+            <element signature="e#8644#8645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="213" column="22" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7079#7080#0" expanded="true" />
+            <element signature="e#7121#7122#0" expanded="true" />
+            <element signature="e#7180#7181#0" expanded="true" />
+            <element signature="e#7216#7217#0" expanded="true" />
+            <element signature="e#7274#7275#0" expanded="true" />
+            <element signature="e#7327#7328#0" expanded="true" />
+            <element signature="e#7373#7374#0" expanded="true" />
+            <element signature="e#7400#7401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/MovieData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2183">
+          <caret line="314" column="31" selection-start-line="314" selection-start-column="31" selection-end-line="314" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1479">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="111" column="68" selection-start-line="111" selection-start-column="68" selection-end-line="111" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

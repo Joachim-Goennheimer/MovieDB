@@ -2,10 +2,10 @@ package sample;
 
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.TextFieldTableCell;
 import sample.datamodel.*;
 
 public class Controller {
@@ -14,12 +14,17 @@ public class Controller {
     private TableView<Movie> movieDisplay;
 
     @FXML
+    private TableColumn userRatingColumn;
+
+    @FXML
     private TextField filterInput;
 
     @FXML
     private Label currentUser;
 
-    private NonRegisteredUserData nonRegisteredUserData;
+    @FXML
+    private ListView<Movie> recommendationView;
+
 
     public void initialize(){
 
@@ -73,6 +78,60 @@ public class Controller {
         SortedList<Movie> sortedMovies = new SortedList<>(movies);
         sortedMovies.comparatorProperty().bind(movieDisplay.comparatorProperty());
         movieDisplay.setItems(sortedMovies);
+
+        movieDisplay.setEditable(true);
+        userRatingColumn.setCellFactory(TextFieldTableCell.forTableColumn());
+
+        userRatingColumn.setOnEditCommit(
+                new EventHandler<TableColumn.CellEditEvent<Movie, String>>() {
+                    @Override
+                    public void handle(TableColumn.CellEditEvent<Movie, String> t) {
+
+                        Movie movie = (Movie) t.getTableView().getItems().get(
+                                t.getTablePosition().getRow());
+
+                        try {
+                             Double rating = Double.parseDouble(t.getNewValue());
+                             System.out.println("rating after parsing ist: " + rating);
+
+                             if (rating > 5.00){
+                                 rating = 5.00;
+//
+                             }
+                             else if (rating < 1.00) {
+                                 rating = 1.00;
+//
+                             }
+
+                            movie.setCurrentUserRating(rating);
+                            addRating(movie.getMovieID(), rating);
+
+                        } catch (Exception e){
+
+//                            -2 is a response code that tells the movie class that the user entered invalid input. If the user previously
+//                            had a valid rating it will be deleted.
+                            addRating(movie.getMovieID(), -2.00);
+                            movie.setCurrentUserRating(-2);
+
+                        }
+
+                    }
+                }
+        );
+    }
+
+    public void addRating(Integer movieID, Double rating){
+
+        RegisteredUserData.addRating(movieID, rating);
+
+        System.out.println("Adding rating: " + rating + " for movie: " + movieID + " current User: " + currentUser);
+
+
+    }
+
+    public void getRecommendations(){
+        RecommendationHandler.loadRecommendations();
+        recommendationView.getItems().setAll(RecommendationHandler.getRecommendations());
     }
 
 

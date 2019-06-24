@@ -1,9 +1,7 @@
 package sample.datamodel;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class RegisteredUserData {
 
@@ -15,34 +13,34 @@ public class RegisteredUserData {
 
 
 
-    public static void dummyData(){
-
-        RegisteredUser user = new RegisteredUser();
-
-        user.setUserName("Joachim");
-        user.setPassword("123");
-        user.addRating(8.5, 20);
-
-        registeredUsersMap.put(user.getUserName(), user);
-
-        user = new RegisteredUser();
-
-        user.setUserName("Leon");
-        user.setPassword("456");
-        user.addRating(5.5, 25);
-
-        registeredUsersMap.put(user.getUserName(), user);
-
-        user = new RegisteredUser();
-
-        user.setUserName("Janik");
-        user.setPassword("789");
-        user.addRating(4.5, 35);
-
-        registeredUsersMap.put(user.getUserName(), user);
-
-
-    }
+//    public static void dummyData(){
+//
+//        RegisteredUser user = new RegisteredUser();
+//
+//        user.setUserName("Joachim");
+//        user.setPassword("123");
+//        user.addRating(8.5, 20);
+//
+//        registeredUsersMap.put(user.getUserName(), user);
+//
+//        user = new RegisteredUser();
+//
+//        user.setUserName("Leon");
+//        user.setPassword("456");
+//        user.addRating(5.5, 25);
+//
+//        registeredUsersMap.put(user.getUserName(), user);
+//
+//        user = new RegisteredUser();
+//
+//        user.setUserName("Janik");
+//        user.setPassword("789");
+//        user.addRating(4.5, 35);
+//
+//        registeredUsersMap.put(user.getUserName(), user);
+//
+//
+//    }
 
 
     public static String loginUser(String username, String password){
@@ -159,6 +157,9 @@ public class RegisteredUserData {
             for (RegisteredUser user: registeredUsersMap.values()){
 
                 System.out.println("Saving: " + user.getUserName() + " Password: " + user.getPassword());
+                System.out.println("Movie Ratings:");
+                user.printRatings();
+
                 outputStream.writeObject(user);
             }
 
@@ -184,5 +185,17 @@ public class RegisteredUserData {
 
     public static String getCurrentUserName(){
         return currentlyLoggedIn.getUserName();
+    }
+
+    public static List<RegisteredUser> getRegisteredUsersList() {
+
+        List<RegisteredUser> userList = new ArrayList<>(registeredUsersMap.values());
+        return userList;
+    }
+
+    public static void addRating(Integer movieID, Double rating){
+
+        currentlyLoggedIn.addRating(rating, movieID);
+
     }
 }
