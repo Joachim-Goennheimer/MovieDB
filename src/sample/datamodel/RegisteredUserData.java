@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class RegisteredUserData {
+//    Class that manages the data of Registered Users and the Register as well as the Login process.
 
     private static final String REGISTERED_USERS_FILE = "userRegister.dat";
 
@@ -12,38 +13,15 @@ public class RegisteredUserData {
     private static Map<String, RegisteredUser> registeredUsersMap = new HashMap<>();
 
 
+    public static void addRating(Integer movieID, Double rating) {
+//        method that adds a rating to the user that is currently logged in.
 
-//    public static void dummyData(){
-//
-//        RegisteredUser user = new RegisteredUser();
-//
-//        user.setUserName("Joachim");
-//        user.setPassword("123");
-//        user.addRating(8.5, 20);
-//
-//        registeredUsersMap.put(user.getUserName(), user);
-//
-//        user = new RegisteredUser();
-//
-//        user.setUserName("Leon");
-//        user.setPassword("456");
-//        user.addRating(5.5, 25);
-//
-//        registeredUsersMap.put(user.getUserName(), user);
-//
-//        user = new RegisteredUser();
-//
-//        user.setUserName("Janik");
-//        user.setPassword("789");
-//        user.addRating(4.5, 35);
-//
-//        registeredUsersMap.put(user.getUserName(), user);
-//
-//
-//    }
+        currentlyLoggedIn.addRating(rating, movieID);
 
+    }
 
-    public static String loginUser(String username, String password){
+    public static String loginUser(String username, String password) {
+//        method that checks whether the login was successful or not.
 
         String responseMessage = "Ups something went wrong";
 
@@ -51,8 +29,7 @@ public class RegisteredUserData {
         if (!registeredUsersMap.keySet().contains(username) || !registeredUsersMap.get(username).getPassword().equals(password)) {
             responseMessage = "Invalid Username or Password";
 
-        }
-        else {
+        } else {
 
             currentlyLoggedIn = registeredUsersMap.get(username);
             responseMessage = "Login Successful";
@@ -63,21 +40,17 @@ public class RegisteredUserData {
     }
 
 
-
-    public static String registerNewUser(String username, String password){
+    public static String registerNewUser(String username, String password) {
+//        method that checks whether registration process was successful or not.
 
         String responseMessage = "Ups something went wrong";
-
         String passwordMessage = validateRegisterPassword(password);
 
-
-        if (!validateRegisterUserName(username)){
+        if (!validateRegisterUserName(username)) {
             responseMessage = "Username already taken";
-        }
-        else if (!passwordMessage.equals("Password valid")){
+        } else if (!passwordMessage.equals("Password valid")) {
             responseMessage = passwordMessage;
-        }
-        else {
+        } else {
             RegisteredUser user = new RegisteredUser();
             user.setUserName(username);
             user.setPassword(password);
@@ -90,24 +63,28 @@ public class RegisteredUserData {
 
     }
 
-    private static boolean validateRegisterUserName(String username){
-
-//        to do: implement check for nonRegistered usernames
+    private static boolean validateRegisterUserName(String username) {
+//        Checks whether a username is already taken.
 
         boolean userNameIsValid = true;
 
-        if (registeredUsersMap.keySet().contains(username)){
+        if (registeredUsersMap.keySet().contains(username)) {
+            userNameIsValid = false;
+        }
+
+        if (!NonRegisteredUserData.validateNameForRegistration(username)) {
             userNameIsValid = false;
         }
 
         return userNameIsValid;
     }
 
-    private static String validateRegisterPassword(String password){
+    private static String validateRegisterPassword(String password) {
+//        Checks whether the password requirements are fulfilled. Additional requirements can be added later.
+
         String passwordResponseMessage = "Password valid";
 
-
-        if (password.length() < 7){
+        if (password.length() < 7) {
             passwordResponseMessage = "Your Password must have at least 7 letters";
         }
 
@@ -116,65 +93,44 @@ public class RegisteredUserData {
     }
 
 
+    public static void loadRegisteredUsers() {
+//        Method that loads all registered users from the binary file.
 
-
-    public static void loadRegisteredUsers(){
-
-
-        try (ObjectInputStream inputStream = new ObjectInputStream(new BufferedInputStream(new FileInputStream(REGISTERED_USERS_FILE)))){
+        try (ObjectInputStream inputStream = new ObjectInputStream(new BufferedInputStream(new FileInputStream(REGISTERED_USERS_FILE)))) {
 
             boolean fileEnd = false;
 
-            while (!fileEnd){
+            while (!fileEnd) {
                 try {
-                    RegisteredUser loadingUser = (RegisteredUser)inputStream.readObject();
-
-                    System.out.println("Loading user: " + loadingUser.getUserName() + " Password: " + loadingUser.getPassword());
-                    loadingUser.printRatings();
+                    RegisteredUser loadingUser = (RegisteredUser) inputStream.readObject();
 
                     registeredUsersMap.put(loadingUser.getUserName(), loadingUser);
 
 
-                } catch (EOFException e){
+                } catch (EOFException e) {
                     fileEnd = true;
-                } catch (ClassNotFoundException e){
+                } catch (ClassNotFoundException e) {
                     System.out.println(e.getMessage());
                 }
             }
-
-
-        }
-        catch (IOException e){
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
 
     }
 
-    public static void saveRegisteredUsers(){
+    public static void saveRegisteredUsers() {
+//        method that saves all registered users and their ratings to the binary file.
 
-        try (ObjectOutputStream outputStream = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(REGISTERED_USERS_FILE)))){
+        try (ObjectOutputStream outputStream = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(REGISTERED_USERS_FILE)))) {
 
-            for (RegisteredUser user: registeredUsersMap.values()){
-
-                System.out.println("Saving: " + user.getUserName() + " Password: " + user.getPassword());
-                System.out.println("Movie Ratings:");
-                user.printRatings();
-
+            for (RegisteredUser user : registeredUsersMap.values()) {
                 outputStream.writeObject(user);
             }
 
 
-        } catch (IOException e){
+        } catch (IOException e) {
             System.out.println(e.getMessage());
-        }
-
-    }
-
-
-    public static void printRegisteredUsers(){
-
-        for (RegisteredUser user: registeredUsersMap.values()){
-            System.out.println("User: " + user.getUserName() + " Password " + user.getPassword());
         }
 
     }
@@ -183,7 +139,7 @@ public class RegisteredUserData {
         return currentlyLoggedIn;
     }
 
-    public static String getCurrentUserName(){
+    public static String getCurrentUserName() {
         return currentlyLoggedIn.getUserName();
     }
 
@@ -193,9 +149,4 @@ public class RegisteredUserData {
         return userList;
     }
 
-    public static void addRating(Integer movieID, Double rating){
-
-        currentlyLoggedIn.addRating(rating, movieID);
-
-    }
 }

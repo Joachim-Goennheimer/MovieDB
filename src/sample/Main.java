@@ -41,13 +41,5 @@ public class Main extends Application {
             InteractiveModeLoader.loadDataInteractiveMode();
             launch(args);
         }
-
-
-
     }
-
-
-
-
-
 }

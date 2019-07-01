@@ -6,46 +6,39 @@ import java.io.IOException;
 import java.util.*;
 
 public class NonRegisteredUserData {
+//    Class that holds the data of all the users from the db file.
 
     private static final String MOVIE_FILE = "movieproject.db";
 
-
     private static List<NonRegisteredUser> nonRegisteredUsers = new ArrayList<>();
 
+    public static void loadUsers() {
+//        method that loads all nonRegistered users and their ratings.
+//        logic might be a bit confusing to understand at first but it was the most elegant solution that I could come up with.
 
-
-    public static void loadUsers(){
-
-        Set<String> verifyDuplicateSet = new HashSet<>();
-
-
-        try(BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))){
+        try (BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))) {
             String input;
             boolean loadUsers = false;
-            String lastUserName = "";
             NonRegisteredUser nonRegisteredUser = new NonRegisteredUser();
-//            System.out.println(nonRegisteredUser.getUserName());
 
-            while ((input = inputReader.readLine()) != null){
+            while ((input = inputReader.readLine()) != null) {
 
-                if (loadUsers){
+                if (loadUsers) {
 
-                    if (input.contains("New_Entity")){
+                    if (input.contains("New_Entity")) {
                         loadUsers = false;
-                    }
-                    else {
+                    } else {
 
                         String[] inputData = input.split("\",\"");
                         String currentUserName = inputData[0].replace("\"", "");
                         Double rating = Double.parseDouble(inputData[1].replace("\"", ""));
                         Integer movieID = Integer.parseInt(inputData[2].replace("\"", ""));
 
-
-
-                        if (!nonRegisteredUser.getUserName().equals(currentUserName)){
+                        if (!nonRegisteredUser.getUserName().equals(currentUserName)) {
 
 //                            check for first empty nonRegisteredUser. Don't want to add that fellow
                             if (!nonRegisteredUser.getUserName().equals("")) {
+//                                here the user from the last loop will be added before the next user object is created
                                 nonRegisteredUsers.add(nonRegisteredUser);
                             }
                             nonRegisteredUser = new NonRegisteredUser();
@@ -55,9 +48,8 @@ public class NonRegisteredUserData {
 
                     }
 
-                }
-                else {
-                    if (input.contains("New_Entity: \"user_name\",\"rating\"")){
+                } else {
+                    if (input.contains("New_Entity: \"user_name\",\"rating\"")) {
 //                        System.out.println(input);
                         loadUsers = true;
                     }
@@ -74,6 +66,17 @@ public class NonRegisteredUserData {
 
         }
 
+    }
+
+    public static boolean validateNameForRegistration(String username){
+        boolean response = true;
+
+        for (NonRegisteredUser user: nonRegisteredUsers){
+            if (user.getUserName().toLowerCase().equals(username.toLowerCase())) {
+                response = false;
+            }
+        }
+        return response;
     }
 
     public static List<NonRegisteredUser> getNonRegisteredUsers() {

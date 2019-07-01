@@ -6,7 +6,8 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class User implements Serializable {
+public abstract class User implements Serializable {
+//    Class that represents a User. Inherited by NonRegisteredUser as well as RegisteredUser Class.
 
     private String userName = "";
     private Map<Integer, Double> ratings = new HashMap<>();
@@ -17,6 +18,7 @@ public class User implements Serializable {
     public void addRating(Double rating, Integer movieID){
 
         if (rating == -2.00 && ratings.keySet().contains(movieID)){
+//            -2 will be passed if a registered user entered invalid input. As a consequence a rating that previously existed will be deleted.
             ratings.remove(movieID);
         }
         else {
@@ -51,17 +53,17 @@ public class User implements Serializable {
         return userName;
     }
 
-
-    public void printRatings(){
-
-        System.out.println("*****************************************************");
-        System.out.println("User: " + userName + " has the following ratings: ");
-
-        for (Integer key: ratings.keySet()){
-            System.out.println("MovieID: " + key + " Rating: " + ratings.get(key));
-        }
-        System.out.println("*****************************************************");
-
-
-    }
+//    Used for debugging purposes.
+//    public void printRatings(){
+//
+//        System.out.println("*****************************************************");
+//        System.out.println("User: " + userName + " has the following ratings: ");
+//
+//        for (Integer key: ratings.keySet()){
+//            System.out.println("MovieID: " + key + " Rating: " + ratings.get(key));
+//        }
+//        System.out.println("*****************************************************");
+//
+//
+//    }
 }

@@ -91,16 +91,16 @@ public class Controller {
                                 t.getTablePosition().getRow());
 
                         try {
-                             Double rating = Double.parseDouble(t.getNewValue());
+
+                            movie.setCurrentUserRating(1.12312322);
+                            Double rating = Double.parseDouble(t.getNewValue());
                              System.out.println("rating after parsing ist: " + rating);
 
                              if (rating > 5.00){
                                  rating = 5.00;
-//
                              }
                              else if (rating < 1.00) {
                                  rating = 1.00;
-//
                              }
 
                             movie.setCurrentUserRating(rating);
@@ -123,9 +123,6 @@ public class Controller {
     public void addRating(Integer movieID, Double rating){
 
         RegisteredUserData.addRating(movieID, rating);
-
-        System.out.println("Adding rating: " + rating + " for movie: " + movieID + " current User: " + currentUser);
-
 
     }
 

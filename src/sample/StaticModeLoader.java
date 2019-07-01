@@ -2,7 +2,6 @@ package sample;
 
 import sample.datamodel.Movie;
 import sample.datamodel.MovieData;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -231,9 +230,4 @@ public class StaticModeLoader extends DataLoader {
 
     }
 
-
-    public static List displayDataStaticMode(List displayData){
-
-        return null;
-    }
 }

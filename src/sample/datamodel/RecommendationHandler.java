@@ -2,7 +2,6 @@ package sample.datamodel;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.collections.transformation.SortedList;
 
 import java.util.*;
 
@@ -10,7 +9,7 @@ public class RecommendationHandler {
 //    Purpose of this class is to handle the logic for recommending movies based on the user preferences.
 
 //    Idea: RegisteredUser has a number of votes given for movies. When he wants to receive recommendations the algorithm will
-//    calculate a similarTaste value for each other user and rank the 5 most similar users in a List. Afterwards the other movies they liked
+//    calculate a similarTaste value for each other user and rank the 15 most similar users in a List. Afterwards the other movies they liked
 //    will be recommended provided the IMDB rating is above a certain level.
 
 
@@ -32,7 +31,8 @@ public class RecommendationHandler {
 
         Map<Double, User> allUsersWithSimilarTasteMap = new TreeMap<>(Collections.reverseOrder());
         Map<Double, User> limitedUsersWithSimilarTasteMap= new TreeMap<>(Collections.reverseOrder());
-        int similarUsersLimit = 10;
+//        Because oneself is always included in the similarUsers + 1 to actually have 15 new users to compare from.
+        int similarUsersLimit = 15 + 1;
         int similarUsersLimitCounter = 0;
         Double generalRating;
 
@@ -108,8 +108,6 @@ public class RecommendationHandler {
 
                     }
                 }
-                similarityValue = 0;
-                sameMoviesWatched = 0;
 
             }
 
@@ -135,8 +133,6 @@ public class RecommendationHandler {
 
 
         }
-
-//        finaliseRecommendationList(similarTasteMap);
 
         for (Double key: limitedUsersWithSimilarTasteMap.keySet()){
 
@@ -211,25 +207,5 @@ public class RecommendationHandler {
         return recommendations;
     }
 
-    public static void finaliseRecommendationList(Map<Double, User> similarTasteMap){
-
-//        Map<Integer, Double> imdbRatings = MovieData.getImdbRatings();
-
-//        for (Double key: similarTasteMap.keySet()){
-//
-//            User user = similarTasteMap.get(key);
-//            Map<Double, Integer> notYetWatchedMap = new TreeMap<>(Collections.reverseOrder());
-//
-//            Map<Integer, Double> watchedMoviesMap = user.getRatings();
-//            for (Integer movieID: watchedMoviesMap.keySet()){
-//                if (cu)
-//            }
-//
-//
-//
-//        }
-
-
-    }
 
 }

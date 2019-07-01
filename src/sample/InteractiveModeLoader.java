@@ -1,7 +1,5 @@
 package sample;
 
-
-import sample.datamodel.MovieData;
 import sample.datamodel.NonRegisteredUserData;
 import sample.datamodel.RegisteredUserData;
 
@@ -23,7 +21,6 @@ public class InteractiveModeLoader extends DataLoader  {
 
         NonRegisteredUserData.loadUsers();
         RegisteredUserData.loadRegisteredUsers();
-//        RegisteredUserData.dummyData();
 
     }
 
