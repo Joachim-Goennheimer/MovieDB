@@ -8,11 +8,26 @@ import java.util.*;
 public class NonRegisteredUserData {
 //    Class that holds the data of all the users from the db file.
 
+    private static NonRegisteredUserData instance = new NonRegisteredUserData();
+
     private static final String MOVIE_FILE = "movieproject.db";
 
-    private static List<NonRegisteredUser> nonRegisteredUsers = new ArrayList<>();
+    private List<NonRegisteredUser> nonRegisteredUsers = new ArrayList<>();
 
-    public static void loadUsers() {
+    /**
+     * Private constructor because class implements the singleton pattern.
+     */
+    private NonRegisteredUserData(){}
+
+    /**
+     * returns the single instance of the class.
+     * @return Returns instance of NonRegisteredUserData class.
+     */
+    public static NonRegisteredUserData getInstance(){
+        return instance;
+    }
+
+    public void loadUsers() {
 //        method that loads all nonRegistered users and their ratings.
 //        logic might be a bit confusing to understand at first but it was the most elegant solution that I could come up with.
 
@@ -68,7 +83,7 @@ public class NonRegisteredUserData {
 
     }
 
-    public static boolean validateNameForRegistration(String username){
+    public boolean validateNameForRegistration(String username){
         boolean response = true;
 
         for (NonRegisteredUser user: nonRegisteredUsers){
@@ -79,7 +94,7 @@ public class NonRegisteredUserData {
         return response;
     }
 
-    public static List<NonRegisteredUser> getNonRegisteredUsers() {
+    public List<NonRegisteredUser> getNonRegisteredUsers() {
         return nonRegisteredUsers;
     }
 }

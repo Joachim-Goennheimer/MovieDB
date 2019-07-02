@@ -10,6 +10,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * The Movie class represents a move.
+ * It contains all the information that is available in the movieproject.db file including the directors, actors and
+ * genres of the movie. The fields utilize the Simple...Property classes which makes databinding in JavaFX convenient.
+ */
 public class Movie {
 //    Class that describes a movie object. The data about directors/actors/ratings is also consolidated here.
 
@@ -40,7 +45,12 @@ public class Movie {
     private ObservableList<Actor> actors = FXCollections.observableArrayList();
     private SimpleStringProperty actorNames = new SimpleStringProperty();
 
-
+    /**
+     * This method adds a director to the movie object. Depending on whether it is the first director added or not the
+     * directorNames property which displays the directors in the GUI has to be updated differently.
+     * This method is called from the MovieData class which is responsible for loading all the movie objects.
+     * @param director The director object that should be added to the movie object.
+     */
     public void addDirector(Director director) {
         this.directors.add(director);
 
@@ -54,6 +64,12 @@ public class Movie {
         }
     }
 
+    /**
+     * This method adds an actor to the movie object. Depending on whether it is the first actor added or not the
+     * actorNames property which displays the actors in the GUI has to be updated differently.
+     * This method is called from the MovieData class which is responsible for loading all the movie objects.
+     * @param actor The actor object that should be added to the movie object.
+     */
     public void addActor(Actor actor) {
 //        works in same way as addDirector method
         this.actors.add(actor);
@@ -66,6 +82,11 @@ public class Movie {
         }
     }
 
+    /**
+     * This method adds the genres to the movie object.
+     * This method is called from the MovieData class which is responsible for loading all the movie objects.
+     * @param genres A List that contains all the genres that can be attributed to the movie object.
+     */
     public void addGenres(List<String> genres) {
 //        works in same way as addDirector method
         this.genres.addAll(genres);
@@ -128,6 +149,11 @@ public class Movie {
         return genres;
     }
 
+    /**
+     * Sets the plot description of the movie object. If no plot description is available in the movieproject.db file
+     * it will set the description to n/a.
+     * @param plotDescription A description of the plot of the movie.
+     */
     public void setPlotDescription(String plotDescription) {
 
         if (plotDescription.equals("")) {
@@ -146,6 +172,12 @@ public class Movie {
     }
 
 
+    /**
+     * Sets the release date of the movie object. The inputFormatter is responsible for parsing the date from the
+     * movieproject.db file, the outputFormatter decides in which format the date will be displayed in the GUI.
+     * If the input String cannot be parsed it will set the release date to n/a.
+     * @param releaseDateString The release date of the movie in String format.
+     */
     public void setReleaseDate(String releaseDateString) {
 
         try {
@@ -190,6 +222,15 @@ public class Movie {
         return numbImdbRatings;
     }
 
+    /**
+     * Sets the rating that the user currently logged in has given the movie.
+     * 1. Method is called when the program loads in interactive mode from the MovieData class in order to retrieve the
+     * ratings that were saved for the user.
+     * 2. Method is called when the user enters a new rating in the GUI in order to update the rating that is displayed.
+     *
+     * @param currentUserRating The rating that the current user has given the movie or a numerical code if there is no
+     *                          information in the data or the user has entered invalid input.
+     */
     public void setCurrentUserRating(double currentUserRating) {
 //        this method does some validation based on what response code it receives.
 //        -1: no information in data

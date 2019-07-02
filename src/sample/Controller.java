@@ -30,7 +30,7 @@ public class Controller {
 
 //        Display current Users username
 
-        currentUser.setText(RegisteredUserData.getCurrentUserName());
+        currentUser.setText(RegisteredUserData.getInstance().getCurrentUserName());
 //        currentUser.setText("Max Mustermann");
 
 
@@ -47,7 +47,7 @@ public class Controller {
 
 //        Transform Observable List into filtered List
 
-        FilteredList<Movie> movies = new FilteredList<>(MovieData.getMovies(), p -> true);
+        FilteredList<Movie> movies = new FilteredList<>(MovieData.getInstance().getMovies(), p -> true);
 
         filterInput.textProperty().addListener((observable, oldValue, newValue) -> {
             movies.setPredicate(movie -> {
@@ -122,7 +122,7 @@ public class Controller {
 
     public void addRating(Integer movieID, Double rating){
 
-        RegisteredUserData.addRating(movieID, rating);
+        RegisteredUserData.getInstance().addRating(movieID, rating);
 
     }
 

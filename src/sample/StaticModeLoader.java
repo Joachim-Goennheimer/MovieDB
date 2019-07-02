@@ -27,7 +27,7 @@ public class StaticModeLoader extends DataLoader {
 
         if (checkForInvalidInput()){
             loadBaseData();
-            MovieData.loadMovies();
+            MovieData.getInstance().loadMovies();
 
             List<Movie> filteredMovies = filterMovies();
             for (Movie movie: filteredMovies){
@@ -149,7 +149,7 @@ public class StaticModeLoader extends DataLoader {
 
     private static List<Movie> filterMovies(){
 
-        List<Movie> unfilteredMovies = MovieData.getMovies();
+        List<Movie> unfilteredMovies = MovieData.getInstance().getMovies();
         List<Movie> filteredMovies = new ArrayList<>();
 
 

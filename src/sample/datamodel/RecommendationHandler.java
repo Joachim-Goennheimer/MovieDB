@@ -20,14 +20,14 @@ public class RecommendationHandler {
 
         Set<Integer> recommendationIDs = new TreeSet<>();
 
-        RegisteredUser currentUser = RegisteredUserData.getCurrentlyLoggedIn();
+        RegisteredUser currentUser = RegisteredUserData.getInstance().getCurrentlyLoggedIn();
         Map<Integer, Double> currentUserRatings = currentUser.getRatings();
 
-        Map<Integer, Double> imdbRatings = MovieData.getImdbRatings();
+        Map<Integer, Double> imdbRatings = MovieData.getInstance().getImdbRatings();
 
         List<User> allUsers = new ArrayList<>();
-        allUsers.addAll(NonRegisteredUserData.getNonRegisteredUsers());
-        allUsers.addAll(RegisteredUserData.getRegisteredUsersList());
+        allUsers.addAll(NonRegisteredUserData.getInstance().getNonRegisteredUsers());
+        allUsers.addAll(RegisteredUserData.getInstance().getRegisteredUsersList());
 
         Map<Double, User> allUsersWithSimilarTasteMap = new TreeMap<>(Collections.reverseOrder());
         Map<Double, User> limitedUsersWithSimilarTasteMap= new TreeMap<>(Collections.reverseOrder());
@@ -195,7 +195,7 @@ public class RecommendationHandler {
     public static void addRecommendations(Set<Integer> recommendationIDs){
         System.out.println("In addRecommendationsFunction");
 
-        recommendations = MovieData.getMoviesByID(recommendationIDs);
+        recommendations = MovieData.getInstance().getMoviesByID(recommendationIDs);
 
         for (Movie movie: recommendations){
             System.out.println("Movie title: " + movie.getTitle() + " IMDB Rating: " + movie.getImdbRating());

@@ -3,8 +3,10 @@ package sample.datamodel;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
+/**
+ * The Actor class represents an actor
+ */
 public class Actor {
-//    Class which describes an actor
 
     private SimpleStringProperty name = new SimpleStringProperty();
     private SimpleIntegerProperty actorID = new SimpleIntegerProperty();
@@ -14,16 +16,27 @@ public class Actor {
 //    private ObservableList<Movie> playedInMovies = FXCollections.observableArrayList();
 //    private List<Integer> playedInMoviesIDs = new ArrayList<>();
 
+    /**
+     * Constructs an Actor object
+     * @param id The id the actor has in the movieproject.db file.
+     * @param name The name of the actor.
+     */
     public Actor(int id, String name) {
         this.actorID.set(id);
         this.name.set(name);
     }
 
 
+    /**
+     * @return Returns name of the actor.
+     */
     public String getName() {
         return name.get();
     }
 
+    /**
+     * @return Returns ID of the actor.
+     */
     public int getActorID() {
         return actorID.get();
     }

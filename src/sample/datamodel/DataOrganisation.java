@@ -8,19 +8,49 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Singleton class that holds information about the directors, actors and genres of each movie.
+ * The information is stored in three Hashmaps that have movieIDs as keys and Lists of the corresponding
+ * directors, actors and genres respectively.
+ */
 public class DataOrganisation {
 //    Class that loads data into Hashmaps before the movie data is loaded.
 //    This data is needed prior to loading movies because it is included into the movie objects.
 
+    private static DataOrganisation instance = new DataOrganisation();
+
     private static final String MOVIE_FILE = "movieproject.db";
 
-    private static Map<Integer, List<Integer>> MovieID_DirectorID_Map = new HashMap<>();
-    private static Map<Integer, List<Integer>> MovieID_ActorID_Map = new HashMap<>();
-    private static Map<Integer, List<String>> MovieID_GenreMap = new HashMap<>();
+    private Map<Integer, List<Integer>> MovieID_DirectorID_Map = new HashMap<>();
+    private Map<Integer, List<Integer>> MovieID_ActorID_Map = new HashMap<>();
+    private Map<Integer, List<String>> MovieID_GenreMap = new HashMap<>();
 
+    /**
+     * Private constructor because class implements the singleton pattern.
+     */
+    private DataOrganisation(){}
 
-    public static void load_MovieID_DirectorID_Map() {
-//        method that loads data that describes which director has directed which movie.
+    /**
+     * returns the single instance of the class.
+     * @return Returns instance of DataOrganisation class.
+     */
+    public static DataOrganisation getInstance(){
+        return instance;
+    }
+
+    /**
+     * resets the single instance of the DataOrganisation class.
+     * This method is only used for testing purposes and is not called in the main program.
+     */
+    public static void reset(){
+        instance = new DataOrganisation();
+    }
+
+    /**
+     * Method that loads data into the MovieID_DirectorID_Map from the movieproject.db file.
+     * The Map maps all directors that have directed a particular movie.
+     */
+    public void load_MovieID_DirectorID_Map() {
 
         try (BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))) {
             String input;
@@ -61,9 +91,11 @@ public class DataOrganisation {
         }
     }
 
-    public static void load_MovieID_ActorID_Map() {
-//        method that loads data that describes which actor has played in which movie.
-//        same logic as in load_MovieID_DirectorID_Map
+    /**
+     * Method that loads data into the MovieID_ActorID_Map from the movieproject.db file.
+     * The Map maps all actors that have played in a particular movie.
+     */
+    public void load_MovieID_ActorID_Map() {
 
         try (BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))) {
             String input;
@@ -100,9 +132,11 @@ public class DataOrganisation {
         }
     }
 
-    public static void load_MovieID_GenreMap() {
-//        method that loads data that describes to which genres a movie is attributed to.
-//        same logic as in load_MovieID_DirectorID_Map
+    /**
+     * Method that loads data into the MovieID_Genre_Map from the movieproject.db file.
+     * The Map maps all genres that are attributed to a certain movie.
+     */
+    public void load_MovieID_GenreMap() {
 
         try (BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))) {
             String input;
@@ -142,16 +176,27 @@ public class DataOrganisation {
         }
     }
 
-
-    public static Map<Integer, List<Integer>> getMovieID_DirectorID_Map() {
+    /**
+     *
+     * @return Returns a Map that maps the directors that have directed a movie to the corresponding movieID.
+     */
+    public Map<Integer, List<Integer>> getMovieID_DirectorID_Map() {
         return MovieID_DirectorID_Map;
     }
 
-    public static Map<Integer, List<Integer>> getMovieID_ActorID_Map() {
+    /**
+     *
+     * @return Returns a Map that maps the actors that have played in a movie to the corresponding movieID.
+     */
+    public Map<Integer, List<Integer>> getMovieID_ActorID_Map() {
         return MovieID_ActorID_Map;
     }
 
-    public static Map<Integer, List<String>> getMovieID_GenreMap() {
+    /**
+     *
+     * @return Returns a Map that maps the genres that are attributed to a movie with a certain movieID .
+     */
+    public Map<Integer, List<String>> getMovieID_GenreMap() {
         return MovieID_GenreMap;
     }
 }

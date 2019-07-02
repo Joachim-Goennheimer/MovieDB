@@ -5,15 +5,36 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
+/**
+ * Singleton class that stores the data of an actor into a Hashmap for later access.
+ */
 public class ActorData {
 //    Class that loads and organises the data of the directors.
 
+    private static ActorData instance = new ActorData();
+
     private static final String MOVIE_FILE = "movieproject.db";
 
-    private static HashMap<Integer, Actor> ActorID_ActorMap = new HashMap<>();
+    private HashMap<Integer, Actor> ActorID_ActorMap = new HashMap<>();
 
+    /**
+     * Private constructor because class implements the singleton pattern.
+     */
+    private ActorData(){}
 
-    public static void loadActors() {
+    /**
+     * returns the single instance of the class.
+     * @return Returns instance of ActorData class.
+     */
+    public static ActorData getInstance(){
+        return instance;
+    }
+
+    /**
+     * Method that loads all Actor objects from the movieproject.db file and stores them in the ActorID_ActorMap.
+     * The Map takes the actorID as a key and the corresponding Actor object as value.
+     */
+    public void loadActors() {
 //        works the same as loadDirectors() in DirectorData
         try (BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))) {
             String input;
@@ -77,7 +98,12 @@ public class ActorData {
 //        }
 //    }
 
-    public static Actor getActorByID(Integer actorID) {
+    /**
+     * Method that returns an actor object for a given actorID after validating whether the actor exists.
+     * @param actorID Takes the actorID of the actor that should be returned as an argument.
+     * @return Returns Actor object.
+     */
+    public Actor getActorByID(Integer actorID) {
 //        method that returns the actor object for a given actorID.
 //        Called by MovieData class when loading the movies to set the actorsproperty of each movie.
 

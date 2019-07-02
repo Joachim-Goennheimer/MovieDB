@@ -9,6 +9,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * Singleton class stores the data of all the movies in an observable list. This class is used to display the movies
+ * to the user in the GUI. It provides 2 methods for loading the movies into the program.
+ */
 public class MovieData {
 //    Class that organises the data of all the movies. It provides 2 methods for loading the movies into the program.
 //    1. loadMovies method is used for static mode where no user is logged in and therefore the ratings of an individual user
@@ -17,20 +21,52 @@ public class MovieData {
 //    into the moviedata in order to show the saved ratings.
 //    Apart from that both methods are identical.
 
+    private static MovieData instance = new MovieData();
+
     private static final String MOVIE_FILE = "movieproject.db";
 
     //    This Observable list is the main component for the moviedata. It will be displayed in the JavaFx GUI.
-    private static ObservableList<Movie> movies = FXCollections.observableArrayList();
-    private static HashMap<Integer, Double> imdbRatings = new HashMap<>();
+    private ObservableList<Movie> movies = FXCollections.observableArrayList();
+    private HashMap<Integer, Double> imdbRatings = new HashMap<>();
+
+    /**
+     * Private constructor because class implements the singleton pattern.
+     */
+    private MovieData(){
+
+    }
+
+    /**
+     * returns the single instance of the class.
+     * @return Returns instance of MovieData class.
+     */
+    public static MovieData getInstance(){
+        return instance;
+    }
+
+    /**
+     * resets the single instance of the DataOrganisation class.
+     * This method is only used for testing purposes and is not called in the main program.
+     */
+    public static void reset(){
+        instance = new MovieData();
+    }
 
 
-    public static void loadMovies() {
+    /**
+     * Method that is used to load the data of all the movies into the program. Also loads the directors, actors and genres
+     * by using the corresponding Hashmaps from the DataOrganisation class that have been loaded before.
+     * This method is only used in the static mode where no user is logged in and therefore the ratings of an individual user
+     * don't have to be included into the data
+     */
+    public void loadMovies() {
 //        method that loads the movieData from the db-file in static mode.
 
 //        Getting data about directors, actors and genres first because the information has to be included for every movie.
-        Map<Integer, List<Integer>> MovieID_DirectorID_Map = DataOrganisation.getMovieID_DirectorID_Map();
-        Map<Integer, List<Integer>> MovieID_ActorID_Map = DataOrganisation.getMovieID_ActorID_Map();
-        Map<Integer, List<String>> MovieID_GenreIDMap = DataOrganisation.getMovieID_GenreMap();
+        DataOrganisation dataOrganisation = DataOrganisation.getInstance();
+        Map<Integer, List<Integer>> MovieID_DirectorID_Map = dataOrganisation.getMovieID_DirectorID_Map();
+        Map<Integer, List<Integer>> MovieID_ActorID_Map = dataOrganisation.getMovieID_ActorID_Map();
+        Map<Integer, List<String>> MovieID_GenreIDMap = dataOrganisation.getMovieID_GenreMap();
 //        used to verify that movies are only included once into the List.
         Set<Integer> verifyDuplicateSet = new HashSet<>();
 
@@ -69,7 +105,6 @@ public class MovieData {
                             try {
                                 double rating = Double.parseDouble(inputData[6].replace("\"", ""));
                                 movie.setImdbRating(rating);
-                                imdbRatings.put(movieID, rating);
                             } catch (NumberFormatException e) {
                                 movie.setImdbRating(0.0);
                             }
@@ -77,7 +112,7 @@ public class MovieData {
 //                        getting directors from previously loaded directorMap
                             try {
                                 for (Integer directorID : MovieID_DirectorID_Map.get(movieID)) {
-                                    Director director = DirectorData.getDirectorByID(directorID);
+                                    Director director = DirectorData.getInstance().getDirectorByID(directorID);
                                     movie.addDirector(director);
                                 }
                             } catch (Exception e) {
@@ -87,7 +122,7 @@ public class MovieData {
 //                        getting actors from previously loaded actorMap
                             try {
                                 for (Integer actorID : MovieID_ActorID_Map.get(movieID)) {
-                                    Actor actor = ActorData.getActorByID(actorID);
+                                    Actor actor = ActorData.getInstance().getActorByID(actorID);
                                     movie.addActor(actor);
                                 }
                             } catch (Exception e) {
@@ -123,14 +158,22 @@ public class MovieData {
         }
     }
 
-    //    Overloading loadMovies method for Interactive Mode in order to include current Users ratings
-    public static void loadMovies(RegisteredUser currentUser) {
+    /**
+     * Method that is used to load the data of all the movies into the program. Also loads the directors, actors and genres
+     * by using the corresponding Hashmaps from the DataOrganisation class that have been loaded before.
+     * This method is only used in the interactive mode where a user is logged in and therefore his user ratings have
+     * to be included into the movie objects in order to display them in the GUI.
+     * The method is mostly identical with the loadMovies() method. The only difference is that the ratings of the user
+     * who is currently logged in are included.
+     */
+    public void loadMovies(RegisteredUser currentUser) {
 //        method that loads the movieData from the db-file in interactive mode.
 //        everything the same with loadmovies method above except for commented section.
 
-        Map<Integer, List<Integer>> MovieID_DirectorID_Map = DataOrganisation.getMovieID_DirectorID_Map();
-        Map<Integer, List<Integer>> MovieID_ActorID_Map = DataOrganisation.getMovieID_ActorID_Map();
-        Map<Integer, List<String>> MovieID_GenreIDMap = DataOrganisation.getMovieID_GenreMap();
+        DataOrganisation dataOrganisation = DataOrganisation.getInstance();
+        Map<Integer, List<Integer>> MovieID_DirectorID_Map = dataOrganisation.getMovieID_DirectorID_Map();
+        Map<Integer, List<Integer>> MovieID_ActorID_Map = dataOrganisation.getMovieID_ActorID_Map();
+        Map<Integer, List<String>> MovieID_GenreIDMap = dataOrganisation.getMovieID_GenreMap();
         Set<Integer> verifyDuplicateSet = new HashSet<>();
 
         try (BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))) {
@@ -177,7 +220,7 @@ public class MovieData {
 
                             try {
                                 for (Integer directorID : MovieID_DirectorID_Map.get(movieID)) {
-                                    Director director = DirectorData.getDirectorByID(directorID);
+                                    Director director = DirectorData.getInstance().getDirectorByID(directorID);
                                     movie.addDirector(director);
                                 }
                             } catch (Exception e) {
@@ -186,7 +229,7 @@ public class MovieData {
 
                             try {
                                 for (Integer actorID : MovieID_ActorID_Map.get(movieID)) {
-                                    Actor actor = ActorData.getActorByID(actorID);
+                                    Actor actor = ActorData.getInstance().getActorByID(actorID);
                                     movie.addActor(actor);
                                 }
 
@@ -218,15 +261,21 @@ public class MovieData {
         }
     }
 
-    public static ObservableList<Movie> getMovies() {
-//        method that returns all the movie data
+    /**
+     * @return Returns a List which includes the data of all the movies.
+     */
+    public ObservableList<Movie> getMovies() {
         return movies;
     }
 
-    public static ObservableList<Movie> getMoviesByID(Set<Integer> movieIDs) {
-//        method that is used for the recommendations. Returns all the movie with the corresponding movieIDs in an
-//        observable list to display them to the user.
-//        Gets called by RecommendationHandler.
+    /**
+     * Method that is used for the recommendations.
+     * Gets called by RecommendationHandler.
+     * @param movieIDs The movieIDs for which the movieobjects should be returned.
+     * @return Returns all the movie with the corresponding movieIDs in an observable list to display them to the user.
+     */
+    public ObservableList<Movie> getMoviesByID(Set<Integer> movieIDs) {
+
         ObservableList<Movie> requestedMovies = FXCollections.observableArrayList();
         for (Movie movie : movies) {
             if (movieIDs.contains(movie.getMovieID())) {
@@ -236,9 +285,12 @@ public class MovieData {
         return requestedMovies;
     }
 
-    public static HashMap<Integer, Double> getImdbRatings() {
-//        method that is used for the recommendations. Used in RecommendationHandler to incorporate the Imdb ratings
-//        of a movie into the calculation of the general rating that decides about recommendations.
+    /**
+     * Method that is used for the recommendations. Used in RecommendationHandler to incorporate the Imdb ratings
+     * of a movie into the calculation of the general rating that decides about recommendations.
+     * @return Returns all ImdbRatings mapped to the corresponding movies.
+     */
+    public HashMap<Integer, Double> getImdbRatings() {
 
         return imdbRatings;
     }

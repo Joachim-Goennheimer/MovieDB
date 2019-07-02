@@ -5,15 +5,36 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
+/**
+ * Singleton class that stores the data of a director into a Hashmap for later access.
+ */
 public class DirectorData {
 //    Class that loads and organises the data of the directors.
 
+    private static DirectorData instance = new DirectorData();
+
     private static final String MOVIE_FILE = "movieproject.db";
 
-    private static HashMap<Integer, Director> DirectorId_DirectorMap = new HashMap<>();
+    private HashMap<Integer, Director> DirectorId_DirectorMap = new HashMap<>();
 
+    /**
+     * Private constructor because class implements the singleton pattern.
+     */
+    private DirectorData(){}
 
-    public static void loadDirectors() {
+    /**
+     * returns the single instance of the class.
+     * @return Returns instance of DirectorData class.
+     */
+    public static DirectorData getInstance(){
+        return instance;
+    }
+
+    /**
+     * Method that loads all Director objects from the movieproject.db file and stores them in the DirectorID_DirectorMap.
+     * The Map takes the directorID as a key and the corresponding Director object as value.
+     */
+    public void loadDirectors() {
         try (BufferedReader inputReader = new BufferedReader(new FileReader(MOVIE_FILE))) {
             String input;
             boolean loadDirectors = false;
@@ -79,7 +100,12 @@ public class DirectorData {
 //        }
 //    }
 
-    public static Director getDirectorByID(Integer directorID) {
+    /**
+     * Method that returns an director object for a given directorID after validating whether the director exists.
+     * @param directorID Takes the directorID of the director that should be returned as an argument.
+     * @return Returns Director object.
+     */
+    public Director getDirectorByID(Integer directorID) {
 //        method that returns the director object for a given directorID.
 //        Called by MovieData class when loading the movies to set the directorsproperty of each movie.
 

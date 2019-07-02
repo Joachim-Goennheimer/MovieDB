@@ -6,21 +6,36 @@ import java.util.*;
 public class RegisteredUserData {
 //    Class that manages the data of Registered Users and the Register as well as the Login process.
 
+    private static RegisteredUserData instance = new RegisteredUserData();
+
     private static final String REGISTERED_USERS_FILE = "userRegister.dat";
 
     private static RegisteredUser currentlyLoggedIn;
 
-    private static Map<String, RegisteredUser> registeredUsersMap = new HashMap<>();
+    private Map<String, RegisteredUser> registeredUsersMap = new HashMap<>();
+
+    /**
+     * Private constructor because class implements the singleton pattern.
+     */
+    private RegisteredUserData(){}
+
+    /**
+     * returns the single instance of the class.
+     * @return Returns instance of RegisteredUserData class.
+     */
+    public static RegisteredUserData getInstance(){
+        return instance;
+    }
 
 
-    public static void addRating(Integer movieID, Double rating) {
+    public void addRating(Integer movieID, Double rating) {
 //        method that adds a rating to the user that is currently logged in.
 
         currentlyLoggedIn.addRating(rating, movieID);
 
     }
 
-    public static String loginUser(String username, String password) {
+    public String loginUser(String username, String password) {
 //        method that checks whether the login was successful or not.
 
         String responseMessage = "Ups something went wrong";
@@ -40,7 +55,7 @@ public class RegisteredUserData {
     }
 
 
-    public static String registerNewUser(String username, String password) {
+    public String registerNewUser(String username, String password) {
 //        method that checks whether registration process was successful or not.
 
         String responseMessage = "Ups something went wrong";
@@ -63,7 +78,7 @@ public class RegisteredUserData {
 
     }
 
-    private static boolean validateRegisterUserName(String username) {
+    private boolean validateRegisterUserName(String username) {
 //        Checks whether a username is already taken.
 
         boolean userNameIsValid = true;
@@ -72,14 +87,14 @@ public class RegisteredUserData {
             userNameIsValid = false;
         }
 
-        if (!NonRegisteredUserData.validateNameForRegistration(username)) {
+        if (!NonRegisteredUserData.getInstance().validateNameForRegistration(username)) {
             userNameIsValid = false;
         }
 
         return userNameIsValid;
     }
 
-    private static String validateRegisterPassword(String password) {
+    private String validateRegisterPassword(String password) {
 //        Checks whether the password requirements are fulfilled. Additional requirements can be added later.
 
         String passwordResponseMessage = "Password valid";
@@ -93,7 +108,7 @@ public class RegisteredUserData {
     }
 
 
-    public static void loadRegisteredUsers() {
+    public void loadRegisteredUsers() {
 //        Method that loads all registered users from the binary file.
 
         try (ObjectInputStream inputStream = new ObjectInputStream(new BufferedInputStream(new FileInputStream(REGISTERED_USERS_FILE)))) {
@@ -119,7 +134,7 @@ public class RegisteredUserData {
 
     }
 
-    public static void saveRegisteredUsers() {
+    public void saveRegisteredUsers() {
 //        method that saves all registered users and their ratings to the binary file.
 
         try (ObjectOutputStream outputStream = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(REGISTERED_USERS_FILE)))) {
@@ -135,18 +150,28 @@ public class RegisteredUserData {
 
     }
 
-    public static RegisteredUser getCurrentlyLoggedIn() {
+    public RegisteredUser getCurrentlyLoggedIn() {
         return currentlyLoggedIn;
     }
 
-    public static String getCurrentUserName() {
+    public String getCurrentUserName() {
         return currentlyLoggedIn.getUserName();
     }
 
-    public static List<RegisteredUser> getRegisteredUsersList() {
+    public List<RegisteredUser> getRegisteredUsersList() {
 
         List<RegisteredUser> userList = new ArrayList<>(registeredUsersMap.values());
         return userList;
+    }
+
+    public void deleteUser(String username){
+//        method only used for testing
+
+        for (String user: registeredUsersMap.keySet()){
+            if (username.equals(user)){
+                registeredUsersMap.remove(user);
+            }
+        }
     }
 
 }

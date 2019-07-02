@@ -19,14 +19,14 @@ public class InteractiveModeLoader extends DataLoader  {
 
     private static void loadUserData(){
 
-        NonRegisteredUserData.loadUsers();
-        RegisteredUserData.loadRegisteredUsers();
+        NonRegisteredUserData.getInstance().loadUsers();
+        RegisteredUserData.getInstance().loadRegisteredUsers();
 
     }
 
     private static void saveUserData(){
 
-        RegisteredUserData.saveRegisteredUsers();
+        RegisteredUserData.getInstance().saveRegisteredUsers();
 
     }
 

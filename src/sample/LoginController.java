@@ -45,7 +45,7 @@ public class LoginController {
 
     public void login(Event event){
 
-        String loginResponse = RegisteredUserData.loginUser(userName.getText(), password.getText());
+        String loginResponse = RegisteredUserData.getInstance().loginUser(userName.getText(), password.getText());
 
         if (loginResponse.equals("Login Successful")){
             loadMainWindow(event);
@@ -63,7 +63,7 @@ public class LoginController {
             registerUserLabel.setText("Password and Password Check did not match");
         }
         else {
-            String registerResponse = RegisteredUserData.registerNewUser(registerUserName.getText(), registerPassword.getText());
+            String registerResponse = RegisteredUserData.getInstance().registerNewUser(registerUserName.getText(), registerPassword.getText());
             registerUserLabel.setText(registerResponse);
         }
 
@@ -76,7 +76,7 @@ public class LoginController {
 
 //        loading movies here because need logged in user first in order to retrieve user ratings
 
-        MovieData.loadMovies(RegisteredUserData.getCurrentlyLoggedIn());
+        MovieData.getInstance().loadMovies(RegisteredUserData.getInstance().getCurrentlyLoggedIn());
 
         Stage primaryStage = new Stage();
 

@@ -6,13 +6,13 @@ public abstract class DataLoader {
 
 
     public static void loadBaseData() {
-        DataOrganisation.load_MovieID_DirectorID_Map();
-        DataOrganisation.load_MovieID_ActorID_Map();
-        DataOrganisation.load_MovieID_GenreMap();
+        DataOrganisation dataOrganisation = DataOrganisation.getInstance();
+        dataOrganisation.load_MovieID_DirectorID_Map();
+        dataOrganisation.load_MovieID_ActorID_Map();
+        dataOrganisation.load_MovieID_GenreMap();
 
-
-        DirectorData.loadDirectors();
-        ActorData.loadActors();
+        DirectorData.getInstance().loadDirectors();
+        ActorData.getInstance().loadActors();
 
     }
 
