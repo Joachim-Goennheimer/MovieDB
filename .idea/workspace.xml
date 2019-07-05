@@ -6,172 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/allclasses-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/allclasses-noframe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/constant-values.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/deprecated-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-14.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index-files/index-9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/overview-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/overview-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/package-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/Controller.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/DataLoader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/InteractiveModeLoader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/LoginController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/Main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/StaticModeLoader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/Actor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/ActorData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/DataOrganisation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/Director.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/DirectorData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/Movie.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/MovieData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/NonRegisteredUser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/NonRegisteredUserData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/RecommendationHandler.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/RegisteredUser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/RegisteredUserData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/User.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/datamodel/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/sample/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/serialized-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Docs/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/StaticModeLoaderTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Tests/StaticModeLoaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jnlp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/userRegister.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/DataLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/InteractiveModeLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/InteractiveModeLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/StaticModeLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/StaticModeLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Actor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/ActorData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/ActorData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/DataOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/DataOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Director.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/DirectorData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/DirectorData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/MovieData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/MovieData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/NonRegisteredUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/NonRegisteredUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/NonRegisteredUserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/NonRegisteredUserData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RecommendationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RecommendationHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RegisteredUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RegisteredUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RegisteredUserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RegisteredUserData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/ActorDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/ActorDataTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/ActorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/ActorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/DataOrganisationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/DataOrganisationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/DirectorDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/DirectorDataTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/DirectorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/DirectorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/MovieDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/MovieDataTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/MovieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/MovieTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/NonRegisteredUserDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/NonRegisteredUserDataTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/NonRegisteredUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/NonRegisteredUserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/RecommendationHandlerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/RecommendationHandlerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/RegisteredUserDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/RegisteredUserDataTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/RegisteredUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/RegisteredUserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/overview-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/Controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/Controller.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/DataLoader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/DataLoader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/InteractiveModeLoader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/InteractiveModeLoader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/LoginController.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/LoginController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/StaticModeLoader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/StaticModeLoader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Actor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Actor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/ActorData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/ActorData.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/DataOrganisation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/DataOrganisation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Director.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Director.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/DirectorData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/DirectorData.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Movie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/MovieData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/MovieData.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/NonRegisteredUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/NonRegisteredUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/NonRegisteredUserData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/NonRegisteredUserData.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RecommendationHandler.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RecommendationHandler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RegisteredUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RegisteredUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RegisteredUserData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RegisteredUserData.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/User.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/User.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Docs/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/InteractiveModeLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/InteractiveModeLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/StaticModeLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/StaticModeLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/ActorDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/ActorDataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/ActorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/ActorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/DataOrganisationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/DataOrganisationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/DirectorDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/DirectorDataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/DirectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/DirectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/MovieDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/MovieDataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/MovieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserDataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/RecommendationHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/RecommendationHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/RegisteredUserDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/RegisteredUserDataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Tests/RegisteredUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/RegisteredUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/ActorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/ActorData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/DataOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/DataOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/DirectorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/DirectorData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/MovieData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/MovieData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testData2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userRegister.dat" beforeDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -316,7 +151,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/datamodel/MovieData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
@@ -330,16 +165,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Tests/RegisteredUserTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="645">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
-                <element signature="e#1070#1071#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1305#1306#0" expanded="true" />
-                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -472,6 +304,19 @@
               <item name="ProjectSecondTry" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectSecondTry" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectSecondTry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectSecondTry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectSecondTry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectSecondTry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -729,7 +574,7 @@
       <workItem from="1559565796796" duration="558000" />
       <workItem from="1559576711597" duration="133893000" />
       <workItem from="1561977855618" duration="6362000" />
-      <workItem from="1561991264292" duration="82505000" />
+      <workItem from="1561991264292" duration="82774000" />
     </task>
     <servers />
   </component>
@@ -766,10 +611,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224620000" />
+    <option name="totallyTimeSpent" value="224889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24034335" />
       <window_info id="Structure" order="1" weight="0.24964234" />
@@ -780,7 +626,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3180723" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3180723" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1453,16 +1299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -1692,6 +1528,16 @@
             <element signature="imports" expanded="true" />
             <element signature="e#13271#13272#0" expanded="true" />
             <element signature="e#13300#13301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
