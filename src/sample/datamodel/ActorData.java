@@ -31,7 +31,7 @@ public class ActorData {
     }
 
     /**
-     * Method that loads all Actor objects from the movieproject.db file and stores them in the ActorID_ActorMap.
+     * Method that loads all Actor objects from the MOVIE_FILE and stores them in the ActorID_ActorMap.
      * The Map takes the actorID as a key and the corresponding Actor object as value.
      */
     public void loadActors() {

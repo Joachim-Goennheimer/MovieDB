@@ -11,18 +11,27 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RegisteredUserDataTest {
 
+    /**
+     * tests whether instance returns correct type of object.
+     */
     @Test
     void getInstance() {
         RegisteredUserData registeredUserData = RegisteredUserData.getInstance();
         assertEquals("sample.datamodel.RegisteredUserData", registeredUserData.getClass().getName());
     }
 
+    /**
+     * tests whether addRating successfully adds the rating for a movie to the user that is currently logged in.
+     */
     @Test
     void addRating() {
         InteractiveModeLoader.loadDataInteractiveMode();
         RegisteredUserData registeredUserData = RegisteredUserData.getInstance();
-        registeredUserData.loginUser("testuser", "TestPasswort123");
-        System.out.println(registeredUserData.getCurrentlyLoggedIn());
+        if (registeredUserData.loginUser("testuser", "TestPasswort123").equals("Invalid Username or Password")){
+            registeredUserData.registerNewUser("testuser", "TestPasswort123");
+            registeredUserData.loginUser("testuser", "TestPasswort123");
+        }
+
         registeredUserData.addRating(3052, 5.0);
         MovieData movieData = MovieData.getInstance();
         movieData.loadMovies(registeredUserData.getCurrentlyLoggedIn());
@@ -38,15 +47,24 @@ class RegisteredUserDataTest {
 
     }
 
+    /**
+     * tests whether the login works for a user that is registered.
+     */
     @Test
     void loginUser_validInput() {
 
         InteractiveModeLoader.loadDataInteractiveMode();
         RegisteredUserData registeredUserData = RegisteredUserData.getInstance();
-        assertEquals("Login Successful", registeredUserData.loginUser("testuser", "TestPasswort123"));
+//        registeredUserData.removeUser("testuser");
+        registeredUserData.registerNewUser("testuser2", "TestPasswort123");
+        assertEquals("Login Successful", registeredUserData.loginUser("testuser2", "TestPasswort123"));
+        registeredUserData.removeUser("testuser2");
 
     }
 
+    /**
+     * tests whether the login does not work for a user that is not yet registered.
+     */
     @Test
     void loginUser_invalidInput() {
         InteractiveModeLoader.loadDataInteractiveMode();
@@ -55,23 +73,33 @@ class RegisteredUserDataTest {
 
     }
 
+    /**
+     * tests whether the registration of a new user works if he enters a valid username and password.
+     */
     @Test
     void registerNewUser_validInput() {
         InteractiveModeLoader.loadDataInteractiveMode();
         RegisteredUserData registeredUserData = RegisteredUserData.getInstance();
-        registeredUserData.deleteUser("testuser2");
-        assertEquals("Successfully registered", registeredUserData.registerNewUser("testuser2", "TestPasswort456"));
-        registeredUserData.deleteUser("testuser2");
+        registeredUserData.removeUser("testuser2");
+        assertEquals("Successfully registered", registeredUserData.registerNewUser("testuser2", "TestPasswort123"));
+        registeredUserData.removeUser("testuser2");
     }
 
+    /**
+     * tests whether the registration of a new user does not work if enters an invalid username or and invalid password.
+     */
     @Test
     void registerNewUser_invalidInput() {
         InteractiveModeLoader.loadDataInteractiveMode();
         RegisteredUserData registeredUserData = RegisteredUserData.getInstance();
-        assertEquals("Username already taken", registeredUserData.registerNewUser("testuser", "TestPasswort456"));
+        registeredUserData.registerNewUser("testuser2", "TestPasswort456");
+        assertEquals("Username already taken", registeredUserData.registerNewUser("testuser2", "TestPasswort123"));
         assertEquals("Your Password must have at least 7 letters", registeredUserData.registerNewUser("testuser3", "test"));
     }
 
+    /**
+     * tests whether RegisteredUsers are correctly loaded from the file.
+     */
     @Test
     void loadRegisteredUsers() {
         RegisteredUserData registeredUserData = RegisteredUserData.getInstance();
@@ -81,10 +109,19 @@ class RegisteredUserDataTest {
         assertEquals("java.util.ArrayList", users.getClass().getName());
     }
 
+    /**
+     * tests whether RegisteredUsers are correctly saved to the file by
+     * 1. removing user
+     * 2. register user
+     * 3. saving user
+     * 4. loading user
+     * 5. Checking whether user is in RegisteredUserData.
+     */
     @Test
     void saveRegisteredUsers() {
         RegisteredUserData registeredUserData = RegisteredUserData.getInstance();
         registeredUserData.loadRegisteredUsers();
+        registeredUserData.removeUser("testuser5");
         registeredUserData.registerNewUser("testuser5", "TestPasswort12345");
         registeredUserData.saveRegisteredUsers();
         registeredUserData.loadRegisteredUsers();
@@ -99,15 +136,4 @@ class RegisteredUserDataTest {
 
     }
 
-    @Test
-    void getCurrentlyLoggedIn() {
-    }
-
-    @Test
-    void getCurrentUserName() {
-    }
-
-    @Test
-    void getRegisteredUsersList() {
-    }
 }

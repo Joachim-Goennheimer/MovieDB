@@ -7,43 +7,117 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample/Tests/ActorDataTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Tests/DataOrganisationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Tests/DirectorDataTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Tests/MovieDataTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserDataTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Tests/RecommendationHandlerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Tests/RegisteredUserDataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/Tests/StaticModeLoaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/ProjectSecondTry.jnlp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ProjectSecondTry/userRegister.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Controller$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/DataLoader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/InteractiveModeLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/InteractiveModeLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/StaticModeLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/StaticModeLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Actor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/ActorData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/ActorData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/DataOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/DataOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Director.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/DirectorData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/DirectorData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/Movie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/MovieData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/MovieData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/NonRegisteredUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/NonRegisteredUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/NonRegisteredUserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/NonRegisteredUserData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RecommendationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RecommendationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RegisteredUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RegisteredUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RegisteredUserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectSecondTry/sample/datamodel/RegisteredUserData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/ActorDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/ActorDataTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/ActorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/ActorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/DataOrganisationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/DataOrganisationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/DirectorDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/DirectorDataTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/DirectorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/DirectorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/MovieDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/MovieDataTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/MovieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/MovieTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/NonRegisteredUserDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/NonRegisteredUserDataTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/NonRegisteredUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/NonRegisteredUserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/RecommendationHandlerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/RecommendationHandlerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/RegisteredUserDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/RegisteredUserDataTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProjectSecondTry/RegisteredUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProjectSecondTry/RegisteredUserTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/Controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/Controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/DataLoader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/DataLoader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/InteractiveModeLoader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/InteractiveModeLoader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/LoginController.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/LoginController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/StaticModeLoader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/StaticModeLoader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Actor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Actor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/ActorData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/ActorData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/DataOrganisation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/DataOrganisation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Director.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Director.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/DirectorData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/DirectorData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/Movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/MovieData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/MovieData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/NonRegisteredUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/NonRegisteredUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/NonRegisteredUserData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/NonRegisteredUserData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RecommendationHandler.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RecommendationHandler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RegisteredUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RegisteredUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RegisteredUserData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/RegisteredUserData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/User.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/User.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/datamodel/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/sample/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/sample/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Docs/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Docs/serialized-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/InteractiveModeLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/InteractiveModeLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/StaticModeLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/StaticModeLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/ActorDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/ActorDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/ActorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/ActorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/DataOrganisationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/DataOrganisationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/DirectorDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/DirectorDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/DirectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/DirectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/MovieDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/MovieDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/MovieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/RecommendationHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/RecommendationHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/RegisteredUserDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/RegisteredUserDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Tests/RegisteredUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tests/RegisteredUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/datamodel/ActorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/ActorData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/datamodel/DataOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/DataOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/Director.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/datamodel/DirectorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/DirectorData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/datamodel/MovieData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/MovieData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userRegister.dat" beforeDir="false" afterPath="$PROJECT_DIR$/userRegister.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testData2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userRegister.dat" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,145 +178,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Actor.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/StaticModeLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            <state relative-caret-position="4170">
+              <caret line="278" column="143" selection-start-line="278" selection-start-column="143" selection-end-line="278" selection-end-column="143" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#846#847#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1212#1213#0" expanded="true" />
-                <element signature="e#1255#1256#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/ActorData.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/Tests/RecommendationHandlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="7" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Director.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/DataOrganisation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2895">
-              <caret line="193" selection-start-line="193" selection-end-line="193" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1153#1154#0" expanded="true" />
-                <element signature="e#1184#1185#0" expanded="true" />
-                <element signature="e#1432#1433#0" expanded="true" />
-                <element signature="e#1481#1482#0" expanded="true" />
-                <element signature="e#6618#6619#0" expanded="true" />
-                <element signature="e#6663#6664#0" expanded="true" />
-                <element signature="e#6730#6731#0" expanded="true" />
-                <element signature="e#6772#6773#0" expanded="true" />
-                <element signature="e#6835#6836#0" expanded="true" />
-                <element signature="e#6874#6875#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Movie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3465">
-              <caret line="231" column="94" selection-start-line="231" selection-start-column="94" selection-end-line="231" selection-end-column="94" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3592#3593#0" expanded="true" />
-                <element signature="e#3633#3634#0" expanded="true" />
-                <element signature="e#3664#3665#0" expanded="true" />
-                <element signature="e#3700#3701#0" expanded="true" />
-                <element signature="e#3754#3755#0" expanded="true" />
-                <element signature="e#3784#3785#0" expanded="true" />
-                <element signature="e#3826#3827#0" expanded="true" />
-                <element signature="e#3863#3864#0" expanded="true" />
-                <element signature="e#3895#3896#0" expanded="true" />
-                <element signature="e#3929#3930#0" expanded="true" />
-                <element signature="e#3980#3981#0" expanded="true" />
-                <element signature="e#4008#4009#0" expanded="true" />
-                <element signature="e#4063#4064#0" expanded="true" />
-                <element signature="e#4112#4113#0" expanded="true" />
-                <element signature="e#4152#4153#0" expanded="true" />
-                <element signature="e#4194#4195#0" expanded="true" />
-                <element signature="e#4242#4243#0" expanded="true" />
-                <element signature="e#4285#4286#0" expanded="true" />
-                <element signature="e#4322#4323#0" expanded="true" />
-                <element signature="e#4361#4362#0" expanded="true" />
-                <element signature="e#4398#4399#0" expanded="true" />
-                <element signature="e#4437#4438#0" expanded="true" />
-                <element signature="e#4476#4477#0" expanded="true" />
-                <element signature="e#4505#4506#0" expanded="true" />
-                <element signature="e#5892#5893#0" expanded="true" />
-                <element signature="e#5936#5937#0" expanded="true" />
-                <element signature="e#5997#5998#0" expanded="true" />
-                <element signature="e#6035#6036#0" expanded="true" />
-                <element signature="e#6814#6815#0" expanded="true" />
-                <element signature="e#6860#6861#0" expanded="true" />
-                <element signature="e#6912#6913#0" expanded="true" />
-                <element signature="e#6959#6960#0" expanded="true" />
-                <element signature="e#6996#6997#0" expanded="true" />
-                <element signature="e#7035#7036#0" expanded="true" />
-                <element signature="e#7091#7092#0" expanded="true" />
-                <element signature="e#7124#7125#0" expanded="true" />
-                <element signature="e#7183#7184#0" expanded="true" />
-                <element signature="e#7240#7241#0" expanded="true" />
-                <element signature="e#7279#7280#0" expanded="true" />
-                <element signature="e#7323#7324#0" expanded="true" />
-                <element signature="e#7385#7386#0" expanded="true" />
-                <element signature="e#7423#7424#0" expanded="true" />
-                <element signature="e#8697#8698#0" expanded="true" />
-                <element signature="e#8743#8744#0" expanded="true" />
-                <element signature="e#9126#9127#0" expanded="true" />
-                <element signature="e#9178#9179#0" expanded="true" />
-                <element signature="e#9247#9248#0" expanded="true" />
-                <element signature="e#9293#9294#0" expanded="true" />
-                <element signature="e#9339#9340#0" expanded="true" />
-                <element signature="e#9373#9374#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/DirectorData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="930">
+              <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -250,10 +201,63 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2640">
-              <caret line="176" column="17" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+            <state relative-caret-position="116">
+              <caret line="223" selection-start-line="223" selection-end-line="223" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1419">
+              <caret line="202" column="76" selection-start-line="202" selection-start-column="76" selection-end-line="202" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Tests/RegisteredUserDataTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Tests/MovieDataTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="91" column="12" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Tests/DataOrganisationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -262,40 +266,27 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/datamodel/MovieData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="290" column="74" selection-start-line="290" selection-start-column="74" selection-end-line="290" selection-end-column="74" />
+            <state relative-caret-position="169">
+              <caret line="181" column="63" selection-start-line="181" selection-start-column="63" selection-end-line="181" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1478#1479#0" expanded="true" />
-                <element signature="e#1509#1510#0" expanded="true" />
-                <element signature="e#1715#1716#0" expanded="true" />
-                <element signature="e#1757#1758#0" expanded="true" />
-                <element signature="e#12180#12181#0" expanded="true" />
-                <element signature="e#12209#12210#0" expanded="true" />
+                <element signature="e#13271#13272#0" expanded="true" />
+                <element signature="e#13300#13301#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/Tests/RegisteredUserTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
+                <element signature="e#1133#1134#0" expanded="true" />
+                <element signature="e#1305#1306#0" expanded="true" />
+                <element signature="e#1365#1366#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -308,23 +299,13 @@
       <list>
         <option value="FxmlFile" />
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>8540</find>
-      <find>5443</find>
-      <find>new_Entity</find>
-      <find>directorNames</find>
-      <find>getRe</find>
-      <find>set</find>
-      <find>filterField</find>
-      <find>9134</find>
-      <find>no genres listed</find>
-      <find>setPlo</find>
       <find>System.out</find>
       <find>Sarah Cal</find>
       <find>setCu</find>
@@ -345,6 +326,16 @@
       <find>Peter Jackson</find>
       <find>No error</find>
       <find>user</find>
+      <find>movieproject.db</find>
+      <find>movie</find>
+      <find>imdbRatings.put</find>
+      <find>you entered movie</find>
+      <find>You entered</find>
+      <find>15</find>
+      <find>25</find>
+      <find>Recommendationhand</find>
+      <find>You entered movie</find>
+      <find>system.out.println</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -360,41 +351,42 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/sample/InteractiveModeHandler.java" />
-        <option value="$PROJECT_DIR$/src/sample/StaticModeHandler.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/UserData.java" />
         <option value="$PROJECT_DIR$/src/sample/Login.fxml" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUser.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/Tests/sample/datamodel/ActorTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/ActorTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/DirectorTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/User.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/RegisteredUserTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/MovieTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/StaticModeLoader.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/src/sample/DataLoader.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/ActorDataTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java" />
         <option value="$PROJECT_DIR$/src/sample/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/DirectorDataTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserDataTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/InteractiveModeLoader.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/RegisteredUserDataTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/DataOrganisationTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/MovieDataTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/Tests/RecommendationHandlerTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/ActorData.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java" />
-        <option value="$PROJECT_DIR$/src/sample/datamodel/DataOrganisation.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/Director.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/Actor.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/Movie.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUser.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/ActorData.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/DataOrganisation.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/DirectorData.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/DataLoader.java" />
+        <option value="$PROJECT_DIR$/src/sample/InteractiveModeLoader.java" />
+        <option value="$PROJECT_DIR$/src/sample/StaticModeHandler.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/RecommendationHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/DataOrganisationTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/ActorDataTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/DirectorDataTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/ActorTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/MovieTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/DirectorTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserDataTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/StaticModeLoaderTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/RegisteredUserTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/RegisteredUserDataTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Tests/MovieDataTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java" />
+        <option value="$PROJECT_DIR$/src/sample/StaticModeLoader.java" />
         <option value="$PROJECT_DIR$/src/sample/datamodel/MovieData.java" />
       </list>
     </option>
@@ -426,6 +418,11 @@
             <path>
               <item name="ProjectSecondTry" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectSecondTry" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectSecondTry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectSecondTry" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -433,13 +430,6 @@
               <item name="ProjectSecondTry" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectSecondTry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectSecondTry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="datamodel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -472,6 +462,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="projectsecondtry" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -488,7 +482,6 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/sample/datamodel" />
@@ -583,11 +576,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieDataTest.getMoviesByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieDataTest.getImdbRatings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectSecondTry" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MovieDataTest" />
-      <option name="METHOD_NAME" value="getMoviesByID" />
+      <option name="METHOD_NAME" value="getImdbRatings" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -597,24 +590,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecommendationHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieDataTest.loadMovies_interactiveMode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectSecondTry" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecommendationHandlerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecommendationHandlerTest.loadRecommendations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectSecondTry" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecommendationHandlerTest" />
-      <option name="METHOD_NAME" value="loadRecommendations" />
+      <option name="MAIN_CLASS_NAME" value="MovieDataTest" />
+      <option name="METHOD_NAME" value="loadMovies_interactiveMode" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -624,11 +604,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisteredUserDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NonRegisteredUserDataTest.validateNameForRegistration_validUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectSecondTry" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NonRegisteredUserDataTest" />
+      <option name="METHOD_NAME" value="validateNameForRegistration_validUserName" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisteredUserDataTest.addRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectSecondTry" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RegisteredUserDataTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="addRating" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -671,10 +666,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in ProjectSecondTry" />
-        <item itemvalue="JUnit.RecommendationHandlerTest" />
-        <item itemvalue="JUnit.RecommendationHandlerTest.loadRecommendations" />
-        <item itemvalue="JUnit.MovieDataTest.getMoviesByID" />
-        <item itemvalue="JUnit.RegisteredUserDataTest" />
+        <item itemvalue="JUnit.RegisteredUserDataTest.addRating" />
+        <item itemvalue="JUnit.NonRegisteredUserDataTest.validateNameForRegistration_validUserName" />
+        <item itemvalue="JUnit.MovieDataTest.getImdbRatings" />
+        <item itemvalue="JUnit.MovieDataTest.loadMovies_interactiveMode" />
       </list>
     </recent_temporary>
   </component>
@@ -692,50 +687,50 @@
       <workItem from="1559565796796" duration="558000" />
       <workItem from="1559576711597" duration="133893000" />
       <workItem from="1561977855618" duration="6362000" />
-      <workItem from="1561991264292" duration="30947000" />
+      <workItem from="1561991264292" duration="82377000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_ProjectSecondTry - 2019.07.02 at 10h 57m 46s.xml">
+    <history-entry file="All_in_ProjectSecondTry - 2019.07.05 at 11h 02m 22s.xml">
       <configuration name="All in ProjectSecondTry" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProjectSecondTry - 2019.07.02 at 10h 58m 59s.xml">
+    <history-entry file="All_in_ProjectSecondTry - 2019.07.05 at 11h 13m 13s.xml">
       <configuration name="All in ProjectSecondTry" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProjectSecondTry - 2019.07.02 at 11h 00m 31s.xml">
+    <history-entry file="All_in_ProjectSecondTry - 2019.07.05 at 11h 13m 33s.xml">
       <configuration name="All in ProjectSecondTry" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProjectSecondTry - 2019.07.02 at 11h 01m 31s.xml">
+    <history-entry file="All_in_ProjectSecondTry - 2019.07.05 at 11h 15m 20s.xml">
       <configuration name="All in ProjectSecondTry" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProjectSecondTry - 2019.07.02 at 11h 27m 09s.xml">
+    <history-entry file="All_in_ProjectSecondTry - 2019.07.05 at 11h 16m 41s.xml">
       <configuration name="All in ProjectSecondTry" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProjectSecondTry - 2019.07.02 at 11h 36m 59s.xml">
+    <history-entry file="RegisteredUserDataTest_addRating - 2019.07.05 at 11h 17m 24s.xml">
+      <configuration name="RegisteredUserDataTest.addRating" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegisteredUserDataTest_addRating - 2019.07.05 at 11h 17m 59s.xml">
+      <configuration name="RegisteredUserDataTest.addRating" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegisteredUserDataTest_addRating - 2019.07.05 at 11h 18m 22s.xml">
+      <configuration name="RegisteredUserDataTest.addRating" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_ProjectSecondTry - 2019.07.05 at 11h 18m 56s.xml">
       <configuration name="All in ProjectSecondTry" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecommendationHandlerTest_loadRecommendations - 2019.07.02 at 11h 41m 45s.xml">
-      <configuration name="RecommendationHandlerTest.loadRecommendations" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_ProjectSecondTry - 2019.07.02 at 11h 42m 16s.xml">
-      <configuration name="All in ProjectSecondTry" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecommendationHandlerTest - 2019.07.02 at 11h 51m 36s.xml">
-      <configuration name="RecommendationHandlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_ProjectSecondTry - 2019.07.02 at 11h 53m 09s.xml">
+    <history-entry file="All_in_ProjectSecondTry - 2019.07.05 at 11h 19m 46s.xml">
       <configuration name="All in ProjectSecondTry" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173062000" />
+    <option name="totallyTimeSpent" value="224492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24034335" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24034335" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" weight="0.3297568" />
       <window_info id="Designer" order="3" />
@@ -744,13 +739,13 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33614457" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3180723" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
@@ -771,6 +766,43 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24034335" />
+      <window_info id="Structure" order="1" weight="0.24964234" />
+      <window_info id="Favorites" order="2" weight="0.3297568" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3180723" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info anchor="bottom" id="Changes" order="10" />
+      <window_info anchor="bottom" id="Profiler" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32891566" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Terminal" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="JetGradle" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -784,33 +816,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/PersonTable.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/out/production/ProjectSecondTry/sample/Main.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/ProjectSecondTry/sample/movieproject.db" />
-    <entry file="file://$PROJECT_DIR$/out/production/ProjectSecondTry/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/LoginExample.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -819,7 +824,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/userRegister.dat" />
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -827,16 +831,6 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -864,305 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/sample">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>sample</OriginalElement>
-          <nodes>
-            <node x="421.662894144144" y="232.0">sample.datamodel.NonRegisteredUser</node>
-            <node x="321.66289414414393" y="625.5">sample.datamodel.NonRegisteredUserData</node>
-            <node x="1584.694144144144" y="1552.0">sample.Main</node>
-            <node x="1664.2995495495493" y="1432.0">sample.StaticModeLoader</node>
-            <node x="1417.194144144144" y="592.5">sample.datamodel.DataOrganisation</node>
-            <node x="1147.194144144144" y="636.5">sample.datamodel.DirectorData</node>
-            <node x="59.662894144143934" y="636.0">sample.datamodel.RegisteredUser</node>
-            <node x="1664.297635135135" y="1135.0">sample.DataLoader</node>
-            <node x="1404.2995495495493" y="1421.0">sample.InteractiveModeLoader</node>
-            <node x="796.694144144144" y="1552.0">sample.Controller</node>
-            <node x="85.17640765765748" y="0.0">sample.datamodel.User</node>
-            <node x="101.1868243243241" y="1410.0">sample.datamodel.RecommendationHandler</node>
-            <node x="61.82956081081056" y="1058.0">sample.datamodel.RegisteredUserData</node>
-            <node x="706.662894144144" y="405.0">sample.datamodel.Movie</node>
-            <node x="1049.591216216216" y="1091.0">sample.datamodel.MovieData</node>
-            <node x="995.3828828828825" y="165.0">sample.datamodel.Director</node>
-            <node x="1658.811824324324" y="165.0">sample.datamodel.Actor</node>
-            <node x="458.1868243243241" y="1410.0">sample.LoginController</node>
-            <node x="1838.194144144144" y="636.5">sample.datamodel.ActorData</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="sample.StaticModeLoader" target="sample.datamodel.Movie">
-              <point x="-96.0" y="-24.0" />
-              <point x="1696.2995495495493" y="1290.0" />
-              <point x="939.694144144144" y="1290.0" />
-              <point x="939.694144144144" y="1018.0" />
-              <point x="927.725394144144" y="1018.0" />
-              <point x="24.5625" y="266.5" />
-            </edge>
-            <edge source="sample.StaticModeLoader" target="sample.DataLoader">
-              <point x="96.0" y="-24.0" />
-              <point x="1888.2995495495493" y="1380.0" />
-              <point x="1813.047635135135" y="1380.0" />
-              <point x="63.75" y="24.0" />
-            </edge>
-            <edge source="sample.datamodel.MovieData" target="sample.datamodel.Movie">
-              <point x="-82.88888888888891" y="-68.0" />
-              <point x="1153.202327327327" y="988.0" />
-              <point x="1025.975394144144" y="988.0" />
-              <point x="122.8125" y="266.5" />
-            </edge>
-            <edge source="sample.datamodel.NonRegisteredUser" target="sample.datamodel.User">
-              <point x="0.0" y="-13.0" />
-              <point x="504.162894144144" y="140.0" />
-              <point x="286.8430743243242" y="140.0" />
-              <point x="80.66666666666674" y="57.5" />
-            </edge>
-            <edge source="sample.datamodel.MovieData" target="sample.datamodel.ActorData">
-              <point x="165.77777777777783" y="-68.0" />
-              <point x="1401.8689939939936" y="1028.0" />
-              <point x="1892.944144144144" y="1028.0" />
-              <point x="-54.75" y="35.0" />
-            </edge>
-            <edge source="sample.InteractiveModeLoader" target="sample.datamodel.RegisteredUserData">
-              <point x="-90.0" y="-35.0" />
-              <point x="1434.2995495495493" y="1310.0" />
-              <point x="354.95456081081056" y="1310.0" />
-              <point x="125.625" y="101.0" />
-            </edge>
-            <edge source="sample.LoginController" target="sample.datamodel.MovieData">
-              <point x="56.5" y="-46.0" />
-              <point x="627.6868243243241" y="1380.0" />
-              <point x="1189.466216216216" y="1380.0" />
-              <point x="-46.625" y="68.0" />
-            </edge>
-            <edge source="sample.datamodel.RecommendationHandler" target="sample.datamodel.RegisteredUserData">
-              <point x="-48.0" y="-46.0" />
-              <point x="221.1868243243241" y="1370.0" />
-              <point x="103.70456081081056" y="1370.0" />
-              <point x="-125.625" y="101.0" />
-            </edge>
-            <edge source="sample.datamodel.MovieData" target="sample.datamodel.Director">
-              <point x="0.0" y="-68.0" />
-              <point x="1236.091216216216" y="968.0" />
-              <point x="1136.694144144144" y="968.0" />
-              <point x="1136.694144144144" y="355.0" />
-              <point x="1124.1328828828825" y="355.0" />
-              <point x="-25.75" y="80.0" />
-            </edge>
-            <edge source="sample.DataLoader" target="sample.datamodel.DirectorData">
-              <point x="-56.66666666666674" y="-24.0" />
-              <point x="1692.6309684684682" y="998.0" />
-              <point x="1333.944144144144" y="998.0" />
-              <point x="62.25" y="35.0" />
-            </edge>
-            <edge source="sample.datamodel.RecommendationHandler" target="sample.datamodel.Movie">
-              <point x="96.0" y="-46.0" />
-              <point x="365.1868243243241" y="1360.0" />
-              <point x="680.2689189189189" y="1360.0" />
-              <point x="680.2689189189189" y="1038.0" />
-              <point x="780.350394144144" y="1038.0" />
-              <point x="-122.8125" y="266.5" />
-            </edge>
-            <edge source="sample.InteractiveModeLoader" target="sample.DataLoader">
-              <point x="30.0" y="-35.0" />
-              <point x="1554.2995495495493" y="1380.0" />
-              <point x="1685.547635135135" y="1380.0" />
-              <point x="-63.75" y="24.0" />
-            </edge>
-            <edge source="sample.Controller" target="sample.datamodel.RecommendationHandler">
-              <point x="-96.79999999999995" y="-46.0" />
-              <point x="820.8941441441441" y="1532.0" />
-              <point x="269.1868243243241" y="1532.0" />
-              <point x="0.0" y="46.0" />
-            </edge>
-            <edge source="sample.datamodel.RecommendationHandler" target="sample.datamodel.NonRegisteredUserData">
-              <point x="0.0" y="-46.0" />
-              <point x="269.1868243243241" y="1340.0" />
-              <point x="539.2376689189189" y="1340.0" />
-              <point x="539.2376689189189" y="1038.0" />
-              <point x="504.16289414414393" y="1038.0" />
-              <point x="0.0" y="46.0" />
-            </edge>
-            <edge source="sample.datamodel.MovieData" target="sample.datamodel.DirectorData">
-              <point x="41.44444444444434" y="-68.0" />
-              <point x="1277.5356606606604" y="958.0" />
-              <point x="1209.444144144144" y="958.0" />
-              <point x="-62.25" y="35.0" />
-            </edge>
-            <edge source="sample.datamodel.RegisteredUserData" target="sample.datamodel.NonRegisteredUserData">
-              <point x="134.0" y="-101.0" />
-              <point x="363.32956081081056" y="1038.0" />
-              <point x="382.49622747747725" y="1038.0" />
-              <point x="-121.66666666666667" y="46.0" />
-            </edge>
-            <edge source="sample.Controller" target="sample.datamodel.RegisteredUserData">
-              <point x="-48.40000000000009" y="-46.0" />
-              <point x="869.294144144144" y="1522.0" />
-              <point x="447.6868243243241" y="1522.0" />
-              <point x="447.6868243243241" y="1330.0" />
-              <point x="187.45456081081056" y="1330.0" />
-              <point x="-41.875" y="101.0" />
-            </edge>
-            <edge source="sample.datamodel.RecommendationHandler" target="sample.datamodel.RegisteredUser">
-              <point x="-96.0" y="-46.0" />
-              <point x="173.1868243243241" y="1380.0" />
-              <point x="13.26829954954917" y="1380.0" />
-              <point x="13.26829954954917" y="1038.0" />
-              <point x="79.82956081081056" y="1038.0" />
-              <point x="-100.83333333333337" y="35.5" />
-            </edge>
-            <edge source="sample.datamodel.RecommendationHandler" target="sample.datamodel.MovieData">
-              <point x="144.0" y="-46.0" />
-              <point x="413.1868243243241" y="1370.0" />
-              <point x="1096.216216216216" y="1370.0" />
-              <point x="-139.875" y="68.0" />
-            </edge>
-            <edge source="sample.datamodel.Movie" target="sample.datamodel.Director">
-              <point x="-147.375" y="-266.5" />
-              <point x="755.787894144144" y="345.0" />
-              <point x="1021.1328828828825" y="345.0" />
-              <point x="-128.75" y="80.0" />
-            </edge>
-            <edge source="sample.datamodel.DirectorData" target="sample.datamodel.Director">
-              <point x="-83.0" y="-35.0" />
-              <point x="1188.694144144144" y="355.0" />
-              <point x="1175.6328828828825" y="355.0" />
-              <point x="25.75" y="80.0" />
-            </edge>
-            <edge source="sample.LoginController" target="sample.datamodel.RegisteredUserData">
-              <point x="-56.5" y="-46.0" />
-              <point x="514.6868243243241" y="1320.0" />
-              <point x="271.20456081081056" y="1320.0" />
-              <point x="41.875" y="101.0" />
-            </edge>
-            <edge source="sample.StaticModeLoader" target="sample.datamodel.MovieData">
-              <point x="-32.0" y="-24.0" />
-              <point x="1760.2995495495493" y="1280.0" />
-              <point x="1375.9662162162158" y="1280.0" />
-              <point x="139.875" y="68.0" />
-            </edge>
-            <edge source="sample.datamodel.NonRegisteredUserData" target="sample.datamodel.NonRegisteredUser">
-              <point x="121.66666666666669" y="-46.0" />
-              <point x="625.8295608108106" y="385.0" />
-              <point x="559.162894144144" y="385.0" />
-              <point x="55.0" y="13.0" />
-            </edge>
-            <edge source="sample.datamodel.ActorData" target="sample.datamodel.Actor">
-              <point x="-73.0" y="-35.0" />
-              <point x="1874.694144144144" y="385.0" />
-              <point x="1829.7284909909908" y="385.0" />
-              <point x="24.416666666666742" y="80.0" />
-            </edge>
-            <edge source="sample.DataLoader" target="sample.datamodel.DataOrganisation">
-              <point x="0.0" y="-24.0" />
-              <point x="1749.297635135135" y="1018.0" />
-              <point x="1717.944144144144" y="1018.0" />
-              <point x="100.25000000000011" y="79.0" />
-            </edge>
-            <edge source="sample.datamodel.Movie" target="sample.datamodel.Actor">
-              <point x="49.125" y="-266.5" />
-              <point x="952.287894144144" y="365.0" />
-              <point x="1683.2284909909908" y="365.0" />
-              <point x="-122.08333333333326" y="80.0" />
-            </edge>
-            <edge source="sample.datamodel.MovieData" target="sample.datamodel.DataOrganisation">
-              <point x="124.33333333333326" y="-68.0" />
-              <point x="1360.4245495495493" y="1018.0" />
-              <point x="1517.444144144144" y="1018.0" />
-              <point x="-100.25" y="79.0" />
-            </edge>
-            <edge source="sample.datamodel.MovieData" target="sample.datamodel.RegisteredUser">
-              <point x="-165.77777777777783" y="-68.0" />
-              <point x="1070.3134384384382" y="1008.0" />
-              <point x="281.4962274774773" y="1008.0" />
-              <point x="100.83333333333337" y="35.5" />
-            </edge>
-            <edge source="sample.Controller" target="sample.datamodel.MovieData">
-              <point x="96.79999999999995" y="-46.0" />
-              <point x="1014.494144144144" y="1532.0" />
-              <point x="1183.319144144144" y="1532.0" />
-              <point x="1183.319144144144" y="1390.0" />
-              <point x="1282.716216216216" y="1390.0" />
-              <point x="46.625" y="68.0" />
-            </edge>
-            <edge source="sample.Controller" target="sample.datamodel.Movie">
-              <point x="0.0" y="-46.0" />
-              <point x="917.694144144144" y="1532.0" />
-              <point x="887.1979166666666" y="1532.0" />
-              <point x="887.1979166666666" y="1038.0" />
-              <point x="829.475394144144" y="1038.0" />
-              <point x="-73.6875" y="266.5" />
-            </edge>
-            <edge source="sample.Main" target="sample.InteractiveModeLoader">
-              <point x="-40.5" y="-46.0" />
-              <point x="1625.194144144144" y="1532.0" />
-              <point x="1524.2995495495493" y="1532.0" />
-              <point x="0.0" y="35.0" />
-            </edge>
-            <edge source="sample.InteractiveModeLoader" target="sample.datamodel.NonRegisteredUserData">
-              <point x="-30.0" y="-35.0" />
-              <point x="1494.2995495495493" y="1300.0" />
-              <point x="632.0059684684682" y="1300.0" />
-              <point x="632.0059684684682" y="1018.0" />
-              <point x="625.8295608108106" y="1018.0" />
-              <point x="121.66666666666669" y="46.0" />
-            </edge>
-            <edge source="sample.datamodel.RegisteredUser" target="sample.datamodel.User">
-              <point x="0.0" y="-35.5" />
-              <point x="180.66289414414393" y="140.0" />
-              <point x="206.17640765765748" y="140.0" />
-              <point x="0.0" y="57.5" />
-            </edge>
-            <edge source="sample.datamodel.RegisteredUserData" target="sample.datamodel.RegisteredUser">
-              <point x="0.0" y="-101.0" />
-              <point x="229.32956081081056" y="1038.0" />
-              <point x="200.82956081081056" y="1038.0" />
-              <point x="20.16666666666663" y="35.5" />
-            </edge>
-            <edge source="sample.datamodel.RecommendationHandler" target="sample.datamodel.User">
-              <point x="-144.0" y="-46.0" />
-              <point x="125.1868243243241" y="1390.0" />
-              <point x="0.0" y="1390.0" />
-              <point x="0.0" y="140.0" />
-              <point x="125.50974099099085" y="140.0" />
-              <point x="-80.66666666666663" y="57.5" />
-            </edge>
-            <edge source="sample.datamodel.MovieData" target="sample.datamodel.Actor">
-              <point x="82.88888888888891" y="-68.0" />
-              <point x="1318.980105105105" y="1008.0" />
-              <point x="1406.694144144144" y="1008.0" />
-              <point x="1406.694144144144" y="385.0" />
-              <point x="1780.8951576576574" y="385.0" />
-              <point x="-24.416666666666742" y="80.0" />
-            </edge>
-            <edge source="sample.DataLoader" target="sample.datamodel.ActorData">
-              <point x="56.66666666666674" y="-24.0" />
-              <point x="1805.9643018018016" y="1038.0" />
-              <point x="2002.444144144144" y="1038.0" />
-              <point x="54.75" y="35.0" />
-            </edge>
-            <edge source="sample.Main" target="sample.StaticModeLoader">
-              <point x="40.5" y="-46.0" />
-              <point x="1706.194144144144" y="1532.0" />
-              <point x="1792.2995495495493" y="1532.0" />
-              <point x="0.0" y="24.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.44995722361866647" x="364.0" y="493.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>public</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/datamodel/DirectorTest.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/datamodel/ActorTest.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/datamodel/ActorTestsfd.java" />
@@ -1183,86 +878,6 @@
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/ActorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/StaticModeLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="151" column="62" selection-start-line="151" selection-start-column="62" selection-end-line="151" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/MovieTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/ActorDataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="11" column="88" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Login.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1270,192 +885,6 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/DirectorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieproject.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1978">
-          <caret line="88810" column="17" selection-start-line="88810" selection-start-column="13" selection-end-line="88810" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserDataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/InteractiveModeLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-769">
-          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/DirectorDataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/DataOrganisationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/MovieDataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="114" column="34" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/RegisteredUserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#1365#1366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/RegisteredUserDataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Tests/RecommendationHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="176" column="17" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/DataOrganisation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2895">
-          <caret line="193" selection-start-line="193" selection-end-line="193" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1481#1482#0" expanded="true" />
-            <element signature="e#6618#6619#0" expanded="true" />
-            <element signature="e#6663#6664#0" expanded="true" />
-            <element signature="e#6730#6731#0" expanded="true" />
-            <element signature="e#6772#6773#0" expanded="true" />
-            <element signature="e#6835#6836#0" expanded="true" />
-            <element signature="e#6874#6875#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Director.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Actor.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1473,82 +902,741 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Movie.java">
+    <entry file="file://$PROJECT_DIR$/movieproject.db">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3465">
-          <caret line="231" column="94" selection-start-line="231" selection-start-column="94" selection-end-line="231" selection-end-column="94" />
+        <state relative-caret-position="410">
+          <caret line="18198" column="28" lean-forward="true" selection-start-line="18198" selection-start-column="8" selection-end-line="18198" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/InteractiveModeLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3592#3593#0" expanded="true" />
-            <element signature="e#3633#3634#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="e#3700#3701#0" expanded="true" />
-            <element signature="e#3754#3755#0" expanded="true" />
-            <element signature="e#3784#3785#0" expanded="true" />
-            <element signature="e#3826#3827#0" expanded="true" />
-            <element signature="e#3863#3864#0" expanded="true" />
-            <element signature="e#3895#3896#0" expanded="true" />
-            <element signature="e#3929#3930#0" expanded="true" />
-            <element signature="e#3980#3981#0" expanded="true" />
-            <element signature="e#4008#4009#0" expanded="true" />
-            <element signature="e#4063#4064#0" expanded="true" />
-            <element signature="e#4112#4113#0" expanded="true" />
-            <element signature="e#4152#4153#0" expanded="true" />
-            <element signature="e#4194#4195#0" expanded="true" />
-            <element signature="e#4242#4243#0" expanded="true" />
-            <element signature="e#4285#4286#0" expanded="true" />
-            <element signature="e#4322#4323#0" expanded="true" />
-            <element signature="e#4361#4362#0" expanded="true" />
-            <element signature="e#4398#4399#0" expanded="true" />
-            <element signature="e#4437#4438#0" expanded="true" />
-            <element signature="e#4476#4477#0" expanded="true" />
-            <element signature="e#4505#4506#0" expanded="true" />
-            <element signature="e#5892#5893#0" expanded="true" />
-            <element signature="e#5936#5937#0" expanded="true" />
-            <element signature="e#5997#5998#0" expanded="true" />
-            <element signature="e#6035#6036#0" expanded="true" />
-            <element signature="e#6814#6815#0" expanded="true" />
-            <element signature="e#6860#6861#0" expanded="true" />
-            <element signature="e#6912#6913#0" expanded="true" />
-            <element signature="e#6959#6960#0" expanded="true" />
-            <element signature="e#6996#6997#0" expanded="true" />
-            <element signature="e#7035#7036#0" expanded="true" />
-            <element signature="e#7091#7092#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7183#7184#0" expanded="true" />
-            <element signature="e#7240#7241#0" expanded="true" />
-            <element signature="e#7279#7280#0" expanded="true" />
-            <element signature="e#7323#7324#0" expanded="true" />
-            <element signature="e#7385#7386#0" expanded="true" />
-            <element signature="e#7423#7424#0" expanded="true" />
-            <element signature="e#8697#8698#0" expanded="true" />
-            <element signature="e#8743#8744#0" expanded="true" />
-            <element signature="e#9126#9127#0" expanded="true" />
-            <element signature="e#9178#9179#0" expanded="true" />
-            <element signature="e#9247#9248#0" expanded="true" />
-            <element signature="e#9293#9294#0" expanded="true" />
-            <element signature="e#9339#9340#0" expanded="true" />
-            <element signature="e#9373#9374#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/StaticModeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">java.applet</node>
+            <node x="" y="">groovyjarjarantlr.LLkGrammarAnalyzer</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRParser</node>
+            <node x="" y="">java.time</node>
+            <node x="" y="">org.xml</node>
+            <node x="" y="">sun.audio</node>
+            <node x="" y="">groovyjarjarantlr.PreservingFileWriter</node>
+            <node x="" y="">groovyjarjarantlr.MismatchedCharException</node>
+            <node x="" y="">groovyjarjarantlr.ASTFactory</node>
+            <node x="" y="">groovyjarjarantlr.ParserSharedInputState</node>
+            <node x="" y="">org.omg</node>
+            <node x="" y="">groovyjarjarcommonscli.TypeHandler</node>
+            <node x="" y="">javax.imageio</node>
+            <node x="" y="">javafx.concurrent</node>
+            <node x="" y="">groovyjarjarantlr.CommonToken</node>
+            <node x="" y="">resources.web-files</node>
+            <node x="" y="">groovy.test</node>
+            <node x="" y="">groovyjarjarantlr.InputBuffer</node>
+            <node x="" y="">groovyjarjarantlr.StringLiteralElement</node>
+            <node x="" y="">groovyjarjarantlr.PythonCodeGenerator</node>
+            <node x="" y="">groovyjarjarantlr.ASTIterator</node>
+            <node x="" y="">groovyjarjarantlr.ParseTree</node>
+            <node x="" y="">javafx.print</node>
+            <node x="" y="">groovyjarjarantlr.TokenStream</node>
+            <node x="" y="">groovyjarjarantlr.debug</node>
+            <node x="" y="">javafx.scene</node>
+            <node x="" y="">groovyjarjarantlr.SimpleTokenManager</node>
+            <node x="" y="">resources.classes</node>
+            <node x="" y="">javax.transaction</node>
+            <node x="" y="">groovyjarjarantlr.ASTNULLType</node>
+            <node x="" y="">groovyjarjarantlr.SynPredBlock</node>
+            <node x="" y="">groovyjarjarantlr.CharScanner</node>
+            <node x="" y="">javax.xml</node>
+            <node x="" y="">apple.launcher</node>
+            <node x="" y="">groovyjarjarantlr.build</node>
+            <node x="" y="">sample.Docs</node>
+            <node x="" y="">groovyjarjarantlr.CharStreamIOException</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRecognitionException</node>
+            <node x="" y="">sun.nio</node>
+            <node x="" y="">jdk.jfr</node>
+            <node x="" y="">groovyjarjarcommonscli.CommandLineParser</node>
+            <node x="" y="">groovyjarjarantlr.JavaCharFormatter</node>
+            <node x="" y="">sun.launcher</node>
+            <node x="" y="">org.jcp</node>
+            <node x="" y="">groovyjarjarcommonscli.PosixParser</node>
+            <node x="" y="">java.math</node>
+            <node x="" y="">sun.text</node>
+            <node x="" y="">toolbarButtonGraphics.general</node>
+            <node x="" y="">groovy.swing</node>
+            <node x="" y="">groovy.beans</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRStringBuffer</node>
+            <node x="" y="">groovyjarjarantlr.actions</node>
+            <node x="" y="">sun.plugin2</node>
+            <node x="" y="">groovy.model</node>
+            <node x="" y="">groovyjarjarantlr.GrammarAtom</node>
+            <node x="" y="">java.awt</node>
+            <node x="" y="">java.text</node>
+            <node x="" y="">groovyjarjarantlr.RuleEndElement</node>
+            <node x="" y="">sun.applet</node>
+            <node x="" y="">javax.print</node>
+            <node x="" y="">jdk.internal</node>
+            <node x="" y="">groovyjarjarantlr.ToolErrorHandler</node>
+            <node x="" y="">org.junit</node>
+            <node x="" y="">groovyjarjarantlr.DefineGrammarSymbols</node>
+            <node x="" y="">sun.swing</node>
+            <node x="" y="">groovyjarjarantlr.TreeParserSharedInputState</node>
+            <node x="" y="">java.rmi</node>
+            <node x="" y="">groovyjarjarantlr.StringLiteralSymbol</node>
+            <node x="" y="">groovyjarjarantlr.ASdebug</node>
+            <node x="" y="">java.beans</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamIOException</node>
+            <node x="" y="">groovyjarjarantlr.DefaultToolErrorHandler</node>
+            <node x="" y="">javax.sql</node>
+            <node x="" y="">org.codehaus</node>
+            <node x="" y="">groovyjarjarantlr.CharFormatter</node>
+            <node x="" y="">groovyjarjarantlr.Grammar</node>
+            <node x="" y="">groovyjarjarantlr.PythonCharFormatter</node>
+            <node x="" y="">groovy.json</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRError</node>
+            <node x="" y="">java.net</node>
+            <node x="" y="">org.apiguardian</node>
+            <node x="" y="">javax.lang</node>
+            <node x="" y="">groovyjarjarantlr.TokenWithIndex</node>
+            <node x="" y="">groovyjarjarantlr.FileCopyException</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine</node>
+            <node x="" y="">sun.misc</node>
+            <node x="" y="">groovyjarjarantlr.Token</node>
+            <node x="" y="">sample.datamodel</node>
+            <node x="" y="">javafx.util</node>
+            <node x="" y="">groovyjarjarantlr.Version</node>
+            <node x="" y="">groovy.xml</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokdefParserTokenTypes</node>
+            <node x="" y="">groovyjarjarantlr.TokenSymbol</node>
+            <node x="" y="">com.oracle</node>
+            <node x="" y="">groovyjarjarantlr.collections</node>
+            <node x="" y="">RecommendationHandlerTest</node>
+            <node x="" y="">groovyjarjarantlr.HTMLCodeGenerator</node>
+            <node x="" y="">javafx.application</node>
+            <node x="" y="">groovyjarjarcommonscli.MissingOptionException</node>
+            <node x="" y="">DirectorTest</node>
+            <node x="" y="">groovyjarjarcommonscli.OptionGroup</node>
+            <node x="" y="">RegisteredUserTest</node>
+            <node x="" y="">javafx.fxml</node>
+            <node x="" y="">sample.LoginController</node>
+            <node x="" y="">javax.net</node>
+            <node x="" y="">sun.plugin</node>
+            <node x="" y="">groovyjarjarcommonscli.MissingArgumentException</node>
+            <node x="" y="">org.apache</node>
+            <node x="" y="">jdk.Exported</node>
+            <node x="" y="">groovyjarjarantlr.AlternativeElement</node>
+            <node x="" y="">groovy.security</node>
+            <node x="" y="">groovy.io</node>
+            <node x="" y="">groovyjarjarantlr.LexerGrammar</node>
+            <node x="" y="">javax.smartcardio</node>
+            <node x="" y="">groovy.transform</node>
+            <node x="" y="">sun.jvm</node>
+            <node x="" y="">javax.security</node>
+            <node x="" y="">javafx.animation</node>
+            <node x="" y="">groovyjarjarantlr.TreeBlockContext</node>
+            <node x="" y="">groovyjarjarantlr.StringUtils</node>
+            <node x="" y="">javax.rmi</node>
+            <node x="" y="">javax.naming</node>
+            <node x="" y="">sample.Controller</node>
+            <node x="" y="">groovyjarjarantlr.DiagnosticCodeGenerator</node>
+            <node x="" y="">groovyjarjarantlr.CSharpCodeGenerator</node>
+            <node x="" y="">groovy.servlet</node>
+            <node x="" y="">javafx.geometry</node>
+            <node x="" y="">com.sun</node>
+            <node x="" y="">groovyjarjarantlr.LLkAnalyzer</node>
+            <node x="" y="">groovyjarjarantlr.TreeElement</node>
+            <node x="" y="">groovyjarjarantlr.NameSpace</node>
+            <node x="" y="">javax.sound</node>
+            <node x="" y="">groovyjarjarantlr.ASTPair</node>
+            <node x="" y="">jdk.xml</node>
+            <node x="" y="">groovyjarjarantlr.CharBuffer</node>
+            <node x="" y="">groovyjarjarasm.asm</node>
+            <node x="" y="">groovyjarjarantlr.NoViableAltForCharException</node>
+            <node x="" y="">groovyjarjarantlr.BaseAST</node>
+            <node x="" y="">groovyjarjarantlr.ParserGrammar</node>
+            <node x="" y="">groovyjarjarantlr.ImportVocabTokenManager</node>
+            <node x="" y="">groovyjarjarantlr.CppCharFormatter</node>
+            <node x="" y="">groovy.time</node>
+            <node x="" y="">groovyjarjarcommonscli.OptionBuilder</node>
+            <node x="" y="">groovyjarjarantlr.Lookahead</node>
+            <node x="" y="">groovyjarjarantlr.CommonASTWithHiddenTokens</node>
+            <node x="" y="">sun.print</node>
+            <node x="" y="">groovyjarjarantlr.BlockWithImpliedExitPath</node>
+            <node x="" y="">groovyjarjarantlr.TreeWalkerGrammar</node>
+            <node x="" y="">MovieDataTest</node>
+            <node x="" y="">org.ietf</node>
+            <node x="" y="">javax.jnlp</node>
+            <node x="" y="">javax.swing</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRHashString</node>
+            <node x="" y="">groovyjarjarantlr.BlockEndElement</node>
+            <node x="" y="">groovyjarjarantlr.CSharpNameSpace</node>
+            <node x="" y="">groovyjarjarantlr.ParseTreeToken</node>
+            <node x="" y="">java.nio</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRetryException</node>
+            <node x="" y="">groovyjarjarantlr.CommonAST</node>
+            <node x="" y="">NonRegisteredUserDataTest</node>
+            <node x="" y="">groovyjarjarantlr.ZeroOrMoreBlock</node>
+            <node x="" y="">groovyjarjarantlr.TokenRangeElement</node>
+            <node x="" y="">groovyjarjarcommonscli.HelpFormatter</node>
+            <node x="" y="">sun.tools</node>
+            <node x="" y="">oracle.jrockit</node>
+            <node x="" y="">groovyjarjarcommonscli.Options</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokdefParser</node>
+            <node x="" y="">groovyjarjarantlr.TokenManager</node>
+            <node x="" y="">groovyjarjarantlr.DocBookCodeGenerator</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.InsertBeforeOp</node>
+            <node x="" y="">META-INF.services</node>
+            <node x="" y="">javax.activation</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamHiddenTokenFilter</node>
+            <node x="" y="">groovyjarjarantlr.JavaBlockFinishingInfo</node>
+            <node x="" y="">java.security</node>
+            <node x="" y="">groovy.jmx</node>
+            <node x="" y="">sun.java2d</node>
+            <node x="" y="">org.w3c</node>
+            <node x="" y="">groovyjarjarantlr.CSharpBlockFinishingInfo</node>
+            <node x="" y="">groovyjarjarcommonscli.GroovyInternalPosixParser</node>
+            <node x="" y="">groovyjarjarantlr.RuleBlock</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.ReplaceOp</node>
+            <node x="" y="">groovyjarjarantlr.Utils</node>
+            <node x="" y="">NonRegisteredUserTest</node>
+            <node x="" y="">groovy.inspect</node>
+            <node x="" y="">groovyjarjarantlr.CodeGenerator</node>
+            <node x="" y="">META-INF.licenses</node>
+            <node x="" y="">groovyjarjarantlr.TreeParser</node>
+            <node x="" y="">java.lang</node>
+            <node x="" y="">groovyjarjarantlr.GrammarSymbol</node>
+            <node x="" y="">groovy.mock</node>
+            <node x="" y="">groovyjarjarantlr.PrintWriterWithSMAP</node>
+            <node x="" y="">ActorDataTest</node>
+            <node x="" y="">groovyjarjarcommonscli.AlreadySelectedException</node>
+            <node x="" y="">StaticModeLoaderTest</node>
+            <node x="" y="">groovyjarjarantlr.CharQueue</node>
+            <node x="" y="">netscape.security</node>
+            <node x="" y="">apple.security</node>
+            <node x="" y="">javafx.embed</node>
+            <node x="" y="">groovyjarjarantlr.OneOrMoreBlock</node>
+            <node x="" y="">java.sql</node>
+            <node x="" y="">javax.crypto</node>
+            <node x="" y="">groovyjarjarantlr.TokenQueue</node>
+            <node x="" y="">groovyjarjarantlr.SemanticException</node>
+            <node x="" y="">groovyjarjarantlr.FileLineFormatter</node>
+            <node x="" y="">RegisteredUserDataTest</node>
+            <node x="" y="">java.util</node>
+            <node x="" y="">javafx.collections</node>
+            <node x="" y="">sample.StaticModeLoader</node>
+            <node x="" y="">groovyjarjarantlr.ByteBuffer</node>
+            <node x="" y="">javafx.event</node>
+            <node x="" y="">sun.lwawt</node>
+            <node x="" y="">groovyjarjarcommonscli.Option</node>
+            <node x="" y="">jdk.nashorn</node>
+            <node x="" y="">groovyjarjarcommonscli.ParseException</node>
+            <node x="" y="">groovyjarjarantlr.CharLiteralElement</node>
+            <node x="" y="">groovyjarjarantlr.WildcardElement</node>
+            <node x="" y="">groovy.text</node>
+            <node x="" y="">jdk.net</node>
+            <node x="" y="">groovyjarjarantlr.NoViableAltException</node>
+            <node x="" y="">groovyjarjarantlr.Tool</node>
+            <node x="" y="">groovyjarjarantlr.MismatchedTokenException</node>
+            <node x="" y="">groovyjarjarantlr.ActionElement</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.RewriteOperation</node>
+            <node x="" y="">groovyjarjarantlr.ActionTransInfo</node>
+            <node x="" y="">groovyjarjarcommonscli.CommandLine</node>
+            <node x="" y="">groovyjarjarcommonscli.OptionValidator</node>
+            <node x="" y="">groovyjarjarcommonscli.BasicParser</node>
+            <node x="" y="">sun.security</node>
+            <node x="" y="">sun.awt</node>
+            <node x="" y="">groovyjarjarantlr.JavaCodeGenerator</node>
+            <node x="" y="">jdk.packager</node>
+            <node x="" y="">groovyjarjarantlr.BlockContext</node>
+            <node x="" y="">groovyjarjarantlr.CSharpCharFormatter</node>
+            <node x="" y="">sample.DataLoader</node>
+            <node x="" y="">javax.activity</node>
+            <node x="" y="">groovyjarjarantlr.RuleSymbol</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamBasicFilter</node>
+            <node x="" y="">groovy.sql</node>
+            <node x="" y="">groovyjarjarantlr.JavaCodeGeneratorPrintWriterManager</node>
+            <node x="" y="">sun.font</node>
+            <node x="" y="">javafx.beans</node>
+            <node x="" y="">DirectorDataTest</node>
+            <node x="" y="">groovyjarjarantlr.ExceptionHandler</node>
+            <node x="" y="">sun.dc</node>
+            <node x="" y="">sun.management</node>
+            <node x="" y="">org.opentest4j</node>
+            <node x="" y="">com.apple</node>
+            <node x="" y="">groovyjarjarantlr.GrammarAnalyzer</node>
+            <node x="" y="">groovyjarjarantlr.ASTVisitor</node>
+            <node x="" y="">sun.invoke</node>
+            <node x="" y="">groovyjarjarantlr.TokenBuffer</node>
+            <node x="" y="">javax.jws</node>
+            <node x="" y="">javax.annotation</node>
+            <node x="" y="">toolbarButtonGraphics.development</node>
+            <node x="" y="">javax.accessibility</node>
+            <node x="" y="">javafx.css</node>
+            <node x="" y="">groovyjarjarantlr.PythonBlockFinishingInfo</node>
+            <node x="" y="">groovy.lang</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamSelector</node>
+            <node x="" y="">toolbarButtonGraphics.navigation</node>
+            <node x="" y="">sun.corba</node>
+            <node x="" y="">ActorTest</node>
+            <node x="" y="">groovyjarjarantlr.CommonHiddenStreamToken</node>
+            <node x="" y="">groovyjarjarantlr.RuleRefElement</node>
+            <node x="" y="">toolbarButtonGraphics.text</node>
+            <node x="" y="">groovyjarjarantlr.ParseTreeRule</node>
+            <node x="" y="">groovyjarjarantlr.TokenRefElement</node>
+            <node x="" y="">sun.tracing</node>
+            <node x="" y="">oracle.jvm</node>
+            <node x="" y="">sample.InteractiveModeLoader</node>
+            <node x="" y="">javafx.stage</node>
+            <node x="" y="">groovyjarjarantlr.Alternative</node>
+            <node x="" y="">sun.util</node>
+            <node x="" y="">groovyjarjarantlr.CppCodeGenerator</node>
+            <node x="" y="">groovyjarjarcommonscli.HelpFormatter.OptionComparator</node>
+            <node x="" y="">groovyjarjarantlr.CharStreamException</node>
+            <node x="" y="">groovyjarjarantlr.DumpASTVisitor</node>
+            <node x="" y="">groovyjarjarantlr.MakeGrammar</node>
+            <node x="" y="">DataOrganisationTest</node>
+            <node x="" y="">groovy.ui</node>
+            <node x="" y="">groovy.grape</node>
+            <node x="" y="">groovyjarjarcommonscli.GnuParser</node>
+            <node x="" y="">groovy.util</node>
+            <node x="" y="">groovyjarjarantlr.RecognitionException</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRException</node>
+            <node x="" y="">sun.reflect</node>
+            <node x="" y="">groovyjarjarantlr.preprocessor</node>
+            <node x="" y="">groovyjarjarantlr.LexerSharedInputState</node>
+            <node x="" y="">sun.jvmstat</node>
+            <node x="" y="">sun.net</node>
+            <node x="" y="">sample.Main</node>
+            <node x="" y="">groovyjarjarantlr.Parser</node>
+            <node x="" y="">groovyjarjarantlr.AlternativeBlock</node>
+            <node x="" y="">groovyjarjarantlr.ExceptionSpec</node>
+            <node x="" y="">groovyjarjarantlr.TreeSpecifierNode</node>
+            <node x="" y="">groovyjarjarantlr.CharRangeElement</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRGrammarParseBehavior</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokdefLexer</node>
+            <node x="" y="">sun.rmi</node>
+            <node x="" y="">META-INF.versions</node>
+            <node x="" y="">sun.instrument</node>
+            <node x="" y="">groovyjarjarcommonscli.UnrecognizedOptionException</node>
+            <node x="" y="">groovyjarjarantlr.GrammarElement</node>
+            <node x="" y="">groovyjarjarantlr.DefaultJavaCodeGeneratorPrintWriterManager</node>
+            <node x="" y="">netscape.javascript</node>
+            <node x="" y="">apple.applescript</node>
+            <node x="" y="">apple.laf</node>
+            <node x="" y="">groovyjarjarcommonscli.PatternOptionBuilder</node>
+            <node x="" y="">org.relaxng</node>
+            <node x="" y="">javax.management</node>
+            <node x="" y="">javax.tools</node>
+            <node x="" y="">groovyjarjarantlr.DefaultFileLineFormatter</node>
+            <node x="" y="">javax.script</node>
+            <node x="" y="">groovyjarjarantlr.LLkParser</node>
+            <node x="" y="">jdk.management</node>
+            <node x="" y="">java.io</node>
+            <node x="" y="">groovyjarjarcommonscli.Parser</node>
+            <node x="" y="">MovieTest</node>
+            <node x="" y="">groovyjarjarcommonscli.Util</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokenTypes</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRLexer</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamException</node>
+            <node x="" y="">groovyjarjarantlr.CppBlockFinishingInfo</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.DeleteOp</node>
+            <node x="" y="">sun.usagetracker</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5123391716772875" x="839.4228022261523" y="557.2385715011042" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/sample">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>sample</OriginalElement>
+          <nodes>
+            <node x="711.0" y="1247.0">sample.datamodel.NonRegisteredUserData</node>
+            <node x="818.0" y="1141.5">sample.datamodel.NonRegisteredUser</node>
+            <node x="932.0" y="1495.0">sample.Main</node>
+            <node x="762.6269832198309" y="136.15674580495772">sample.StaticModeLoader</node>
+            <node x="418.0" y="931.0">sample.datamodel.DataOrganisation</node>
+            <node x="1078.0" y="1247.0">sample.datamodel.DirectorData</node>
+            <node x="1003.0" y="1119.0">sample.datamodel.RegisteredUser</node>
+            <node x="381.0" y="1247.0">sample.Controller</node>
+            <node x="624.5" y="0.0">sample.DataLoader</node>
+            <node x="438.0" y="384.5">sample.InteractiveModeLoader</node>
+            <node x="891.25" y="931.0">sample.datamodel.User</node>
+            <node x="1347.0" y="1495.0">sample.Docs.sample</node>
+            <node x="0.0" y="1247.0">sample.datamodel.RecommendationHandler</node>
+            <node x="1069.0" y="0.0">sample.datamodel.RegisteredUserData</node>
+            <node x="0.0" y="0.0">sample.datamodel.Movie</node>
+            <node x="1139.0" y="1495.0">sample.Docs.index-files</node>
+            <node x="0.0" y="931.0">sample.datamodel.MovieData</node>
+            <node x="641.0" y="1495.0">sample.datamodel.Director</node>
+            <node x="366.0" y="1495.0">sample.datamodel.Actor</node>
+            <node x="1290.0" y="931.0">sample.LoginController</node>
+            <node x="0.0" y="1495.0">sample.datamodel.ActorData</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="sample.StaticModeLoader" target="sample.DataLoader">
+              <point x="0.0" y="-310.5" />
+              <point x="849.9624442287409" y="113.92152417930146" />
+              <point x="752.0" y="95.0" />
+              <point x="42.5" y="35.0" />
+            </edge>
+            <edge source="sample.datamodel.NonRegisteredUser" target="sample.datamodel.User">
+              <point x="0.0" y="-13.0" />
+              <point x="900.5" y="1094.0" />
+              <point x="951.75" y="1094.0" />
+              <point x="-60.5" y="69.0" />
+            </edge>
+            <edge source="sample.InteractiveModeLoader" target="sample.DataLoader">
+              <point x="0.0" y="-46.0" />
+              <point x="558.0" y="95.0" />
+              <point x="667.0" y="95.0" />
+              <point x="-42.5" y="35.0" />
+            </edge>
+            <edge source="sample.datamodel.RegisteredUser" target="sample.datamodel.User">
+              <point x="0.0" y="-35.5" />
+              <point x="1124.0" y="1094.0" />
+              <point x="1072.75" y="1094.0" />
+              <point x="60.5" y="69.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.39871323947132375" x="248.11138283552248" y="356.46249126521775" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/datamodel/ActorData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="7" selection-end-line="10" />
+        <state relative-caret-position="-792">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Director.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/DataOrganisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1842">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/datamodel/DirectorData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DataLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/NonRegisteredUserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-582">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="231" column="94" selection-start-line="231" selection-start-column="94" selection-end-line="231" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/DirectorDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="43" column="7" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/ActorDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/MovieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/DirectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/StaticModeLoaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="86" lean-forward="true" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/ActorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="70" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/NonRegisteredUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/RegisteredUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="e#1305#1306#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/RecommendationHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userRegister.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/DataOrganisationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/RegisteredUserDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testData.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testData2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Tests/MovieDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="91" column="12" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RecommendationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="223" selection-start-line="223" selection-end-line="223" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/datamodel/RegisteredUserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1419">
+          <caret line="202" column="76" selection-start-line="202" selection-start-column="76" selection-end-line="202" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/ProjectSecondTry/result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/StaticModeLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4170">
+          <caret line="278" column="143" selection-start-line="278" selection-start-column="143" selection-end-line="278" selection-end-column="143" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1557,16 +1645,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/datamodel/MovieData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="290" column="74" selection-start-line="290" selection-start-column="74" selection-end-line="290" selection-end-column="74" />
+        <state relative-caret-position="169">
+          <caret line="181" column="63" selection-start-line="181" selection-start-column="63" selection-end-line="181" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
-            <element signature="e#1715#1716#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#12180#12181#0" expanded="true" />
-            <element signature="e#12209#12210#0" expanded="true" />
+            <element signature="e#13271#13272#0" expanded="true" />
+            <element signature="e#13300#13301#0" expanded="true" />
           </folding>
         </state>
       </provider>

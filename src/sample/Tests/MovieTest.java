@@ -10,6 +10,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Class that tests the Movie Class. Tests should be self-explanatory.
+ */
 class MovieTest {
 
     private Movie testmovie;

@@ -7,6 +7,9 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Class that tests the RegisteredUser Class. Tests should be self-explanatory.
+ */
 class RegisteredUserTest {
 
     private RegisteredUser testuser;
@@ -27,6 +30,10 @@ class RegisteredUserTest {
 
     }
 
+    /**
+     * tests whether invalid input for a rating is processed correctly. If invalid input was entered the rating will be
+     * set to -1.
+     */
     @Test
     void addRating_InvalidInput() {
         testuser.addRating(-2.0, 1015);
@@ -70,12 +77,8 @@ class RegisteredUserTest {
     @Test
     void setPassword() {
         testuser.setPassword("ThisIsAStrongPassword171712345");
-        assertEquals("ThisIsAStrongPassword171712345", testuser.getPassword());
+        assertTrue(testuser.checkPassword("ThisIsAStrongPassword171712345"));
     }
 
 
-    @Test
-    void getPassword() {
-        assertEquals("Leon12345", testuser.getPassword());
-    }
 }

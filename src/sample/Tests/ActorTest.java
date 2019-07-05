@@ -4,6 +4,9 @@ import sample.datamodel.Actor;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Class that tests the Actor Class. Tests should be self-explanatory.
+ */
 class ActorTest {
 
     private Actor testactor;

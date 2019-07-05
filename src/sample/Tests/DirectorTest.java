@@ -3,8 +3,9 @@ import org.junit.jupiter.api.Test;
 import sample.datamodel.Director;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
-
+/**
+ * Class that tests the Director Class. Tests should be self-explanatory.
+ */
 class DirectorTest {
 
     private Director testdirector;

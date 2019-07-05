@@ -5,6 +5,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * Singleton class that stores the data of a of all Nonregistered Users into a List for later access.
+ * This class is later used in order to find (in addition to registered users) nonregistered users with similar movie
+ * taste like the currently logged in user. With these similar users
+ * the Recommendation Handler later determines the recommendations for the currently logged in user.
+ */
 public class NonRegisteredUserData {
 //    Class that holds the data of all the users from the db file.
 
@@ -27,6 +33,9 @@ public class NonRegisteredUserData {
         return instance;
     }
 
+    /**
+     * Method that loads all Nonregistered user objects from the MOVIE_FILE file and stores them in the nonRegisteredUsers list.
+     */
     public void loadUsers() {
 //        method that loads all nonRegistered users and their ratings.
 //        logic might be a bit confusing to understand at first but it was the most elegant solution that I could come up with.
@@ -83,6 +92,12 @@ public class NonRegisteredUserData {
 
     }
 
+    /**
+     * Validates whether the name a user tried to enter in the registration form is already taken by a Nonregistered User.
+     * In that case he will not be allowed to take the same name.
+     * @param username The name the user tried to register as his username.
+     * @return True if no Nonregistered User has the same name - False if a Nonregistered User has the same name.
+     */
     public boolean validateNameForRegistration(String username){
         boolean response = true;
 

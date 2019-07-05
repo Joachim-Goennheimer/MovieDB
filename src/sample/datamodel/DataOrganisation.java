@@ -47,7 +47,7 @@ public class DataOrganisation {
     }
 
     /**
-     * Method that loads data into the MovieID_DirectorID_Map from the movieproject.db file.
+     * Method that loads data into the MovieID_DirectorID_Map from the MOVIE_FILE file.
      * The Map maps all directors that have directed a particular movie.
      */
     public void load_MovieID_DirectorID_Map() {
@@ -92,7 +92,7 @@ public class DataOrganisation {
     }
 
     /**
-     * Method that loads data into the MovieID_ActorID_Map from the movieproject.db file.
+     * Method that loads data into the MovieID_ActorID_Map from the MOVIE_FILE file.
      * The Map maps all actors that have played in a particular movie.
      */
     public void load_MovieID_ActorID_Map() {
@@ -133,7 +133,7 @@ public class DataOrganisation {
     }
 
     /**
-     * Method that loads data into the MovieID_Genre_Map from the movieproject.db file.
+     * Method that loads data into the MovieID_Genre_Map from the MOVIE_FILE file.
      * The Map maps all genres that are attributed to a certain movie.
      */
     public void load_MovieID_GenreMap() {

@@ -31,21 +31,6 @@ public class Controller {
 //        Display current Users username
 
         currentUser.setText(RegisteredUserData.getInstance().getCurrentUserName());
-//        currentUser.setText("Max Mustermann");
-
-
-//        1. Load Data Organisation Hashmaps --> see connections between different data types. This is necessary to later load the data types as
-//           they often include several of the other type
-//        2. Load Directors, Actors and Users as they only need the key of the movies and not the actual name
-//        3. Load the movies as they need all the explicit data (names of directors, actors etc.) and therefore must utilize the Hashmaps of the
-//           DataOrganisation Class.
-
-//        MovieData.loadDirectors();
-
-//        gets moviedata and puts it into table
-
-
-//        Transform Observable List into filtered List
 
         FilteredList<Movie> movies = new FilteredList<>(MovieData.getInstance().getMovies(), p -> true);
 

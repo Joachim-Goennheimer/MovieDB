@@ -16,6 +16,9 @@ class DataOrganisationTest {
     }
 
 
+    /**
+     * tests whether instance returns correct type of object and that the object is not null.
+     */
     @Test
     void getInstance() {
         DataOrganisation dataOrganisation = DataOrganisation.getInstance();

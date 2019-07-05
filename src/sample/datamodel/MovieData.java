@@ -54,8 +54,9 @@ public class MovieData {
 
 
     /**
-     * Method that is used to load the data of all the movies into the program. Also loads the directors, actors and genres
-     * by using the corresponding Hashmaps from the DataOrganisation class that have been loaded before.
+     * Method that is used to load the data of all the movies from the MOVIE_FILE into the program.
+     * Also loads the directors, actors and genres by using the corresponding Hashmaps from the DataOrganisation class
+     * that have been loaded before.
      * This method is only used in the static mode where no user is logged in and therefore the ratings of an individual user
      * don't have to be included into the data
      */
@@ -91,6 +92,8 @@ public class MovieData {
 //                            Setting attributes of Movie object.
                             Movie movie = new Movie();
                             movie.setMovieID(movieID);
+//                            Could replace ", The" witch "The in beginning of movie title". However, this would make
+//                            sorting by movie title quite useless as all movies that begin with the would be grouped together.
                             movie.setTitle(inputData[1]);
                             movie.setPlotDescription(inputData[2]);
                             movie.setReleaseDate(inputData[4]);
@@ -105,6 +108,16 @@ public class MovieData {
                             try {
                                 double rating = Double.parseDouble(inputData[6].replace("\"", ""));
                                 movie.setImdbRating(rating);
+                            } catch (NumberFormatException e) {
+                                movie.setImdbRating(0.0);
+                            }
+
+//                            Also needed in static mode in order to include the ImdbRatings when calculating the recommendations
+                            try {
+                                double rating = Double.parseDouble(inputData[6].replace("\"", ""));
+                                movie.setImdbRating(rating);
+                                imdbRatings.put(movieID, rating);
+
                             } catch (NumberFormatException e) {
                                 movie.setImdbRating(0.0);
                             }
@@ -159,12 +172,14 @@ public class MovieData {
     }
 
     /**
-     * Method that is used to load the data of all the movies into the program. Also loads the directors, actors and genres
-     * by using the corresponding Hashmaps from the DataOrganisation class that have been loaded before.
+     * Method that is used to load the data of all the movies from the MOVIE_FILE into the program.
+     * Also loads the directors, actors and genres by using the corresponding Hashmaps from the DataOrganisation class
+     * that have been loaded before.
      * This method is only used in the interactive mode where a user is logged in and therefore his user ratings have
      * to be included into the movie objects in order to display them in the GUI.
      * The method is mostly identical with the loadMovies() method. The only difference is that the ratings of the user
      * who is currently logged in are included.
+     * @param currentUser The user that is currently logged in.
      */
     public void loadMovies(RegisteredUser currentUser) {
 //        method that loads the movieData from the db-file in interactive mode.
@@ -194,6 +209,8 @@ public class MovieData {
 
                             Movie movie = new Movie();
                             movie.setMovieID(movieID);
+//                            Could replace ", The" witch "The in beginning of movie title". However, this would make
+//                            sorting by movie title quite useless as all movies that begin with the would be grouped together.
                             movie.setTitle(inputData[1]);
                             movie.setPlotDescription(inputData[2]);
                             movie.setReleaseDate(inputData[4]);
@@ -280,6 +297,25 @@ public class MovieData {
         for (Movie movie : movies) {
             if (movieIDs.contains(movie.getMovieID())) {
                 requestedMovies.add(movie);
+            }
+        }
+        return requestedMovies;
+    }
+
+    public List<Movie> getMoviesByTitle(String[] movieTitles){
+
+        List<Movie> requestedMovies = new ArrayList<>();
+        for (Movie movie: movies){
+            for (String movieTitle : movieTitles){
+//                using contains() method instead of equals() method in order to account for ", The" and "The" that
+//                are lost when processing arguments in static mode. Also it is sufficient for the user to enter part of
+//                the title. Could be improved by an algorithm that calculates the similarity of two string values later on
+//                in order to ensure that user input for --film that is very short and generic does not result in distorting
+//                the result but as it is likely that the user enters quite specific movie titles this is not necessary.
+                if (movie.getTitle().toLowerCase().contains(movieTitle.toLowerCase())){
+                    System.out.println("You entered movie: " + movie.getTitle());
+                    requestedMovies.add(movie);
+                }
             }
         }
         return requestedMovies;

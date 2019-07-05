@@ -34,42 +34,42 @@ class RecommendationHandlerTest {
 
     }
 
-    @Test
-    void addRecommendations() {
-
-        Set<Integer> recommendationIDs = new HashSet<>();
-        recommendationIDs.add(3890);
-        recommendationIDs.add(4414);
-        recommendationIDs.add(5045);
-
-        InteractiveModeLoader.loadDataInteractiveMode();
-
-        MovieData movieData = MovieData.getInstance();
-        movieData.loadMovies();
-        RecommendationHandler.addRecommendations(recommendationIDs);
-
-        List<Movie> recommendations = RecommendationHandler.getRecommendations();
-
-        boolean movie1InList = false;
-        boolean movie2InList = false;
-        boolean movie3InList = false;
-
-        for (Movie movie: recommendations){
-            if (movie.getMovieID() == 3890){
-                movie1InList = true;
-            }
-            else if (movie.getMovieID() == 4414){
-                movie2InList = true;
-            }
-            else if (movie.getMovieID() == 5045){
-                movie3InList = true;
-            }
-        }
-
-        assertTrue(movie1InList && movie2InList && movie3InList);
-
-
-    }
+//    @Test
+//    void addRecommendations() {
+//
+//        Set<Integer> recommendationIDs = new HashSet<>();
+//        recommendationIDs.add(3890);
+//        recommendationIDs.add(4414);
+//        recommendationIDs.add(5045);
+//
+//        InteractiveModeLoader.loadDataInteractiveMode();
+//
+//        MovieData movieData = MovieData.getInstance();
+//        movieData.loadMovies();
+//        RecommendationHandler.addRecommendations(recommendationIDs);
+//
+//        List<Movie> recommendations = RecommendationHandler.getRecommendations();
+//
+//        boolean movie1InList = false;
+//        boolean movie2InList = false;
+//        boolean movie3InList = false;
+//
+//        for (Movie movie: recommendations){
+//            if (movie.getMovieID() == 3890){
+//                movie1InList = true;
+//            }
+//            else if (movie.getMovieID() == 4414){
+//                movie2InList = true;
+//            }
+//            else if (movie.getMovieID() == 5045){
+//                movie3InList = true;
+//            }
+//        }
+//
+//        assertTrue(movie1InList && movie2InList && movie3InList);
+//
+//
+//    }
 
     @Test
     void getRecommendations() {

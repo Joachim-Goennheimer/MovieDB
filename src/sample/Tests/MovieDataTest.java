@@ -33,6 +33,9 @@ class MovieDataTest {
 
     }
 
+    /**
+     * tests whether instance returns correct type of object and that the object is not null.
+     */
     @Test
     void getInstance() {
         MovieData movieData = MovieData.getInstance();
@@ -40,6 +43,10 @@ class MovieDataTest {
         assertNotEquals(null, movieData);
     }
 
+    /**
+     * tests whether movies are loaded correctly from file in static mode. Testing with two movies and all of their data
+     * that is part of the file.
+     */
     @Test
     void loadMovies_staticMode() {
 
@@ -71,13 +78,25 @@ class MovieDataTest {
 
     }
 
+    /**
+     * tests whether movies are loaded correctly from file in interactive mode. Testing with two movies and all of their data
+     * that is part of the file and a registered test user and his ratings for the two movies whether they are successfully
+     * included into the data.
+     */
     @Test
     void loadMovies_interactiveMode() {
 
         InteractiveModeLoader.loadDataInteractiveMode();
         registeredUserData = RegisteredUserData.getInstance();
-        registeredUserData.loginUser("testuser", "TestPasswort123");
+//        testuser should already be in the userRegister but if not it will be created here.
+        if (registeredUserData.loginUser("testuser", "TestPasswort123").equals("Invalid Username or Password")){
+            registeredUserData.registerNewUser("testuser", "TestPasswort123");
+            registeredUserData.loginUser("testuser", "TestPasswort123");
+        }
+
         currentlyLoggedIn = registeredUserData.getCurrentlyLoggedIn();
+        registeredUserData.addRating(5045, 5.0);
+        registeredUserData.addRating(2081, 5.0);
 
         MovieData movieData = MovieData.getInstance();
         movieData.loadMovies(currentlyLoggedIn);
@@ -109,6 +128,9 @@ class MovieDataTest {
         }
     }
 
+    /**
+     * tests whether getter returns correct data.
+     */
     @Test
     void getMovies() {
 
@@ -119,6 +141,9 @@ class MovieDataTest {
         assertFalse(movieData.getMovies().isEmpty());
     }
 
+    /**
+     * first loading movies and then trying to get a list of movies by their ids from the MovieDataClass.
+     */
     @Test
     void getMoviesByID() {
 
@@ -150,16 +175,15 @@ class MovieDataTest {
 
     }
 
+    /**
+     * tests whether the ImdbRatings can be correctly retrieved from the MovieDataClass.
+     */
     @Test
     void getImdbRatings() {
 
-        InteractiveModeLoader.loadDataInteractiveMode();
-        registeredUserData = RegisteredUserData.getInstance();
-        registeredUserData.loginUser("testuser", "TestPasswort123");
-        currentlyLoggedIn = registeredUserData.getCurrentlyLoggedIn();
-
+        DataLoader.loadBaseData();
         MovieData movieData = MovieData.getInstance();
-        movieData.loadMovies(currentlyLoggedIn);
+        movieData.loadMovies();
         Map<Integer, Double> ratings = movieData.getImdbRatings();
         assertEquals(8.5, ratings.get(2879));
         assertEquals(8.9, ratings.get(5045));

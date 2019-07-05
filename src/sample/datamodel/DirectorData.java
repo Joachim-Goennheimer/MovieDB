@@ -31,7 +31,7 @@ public class DirectorData {
     }
 
     /**
-     * Method that loads all Director objects from the movieproject.db file and stores them in the DirectorID_DirectorMap.
+     * Method that loads all Director objects from the MOVIE_FILE file and stores them in the DirectorID_DirectorMap.
      * The Map takes the directorID as a key and the corresponding Director object as value.
      */
     public void loadDirectors() {

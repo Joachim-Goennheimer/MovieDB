@@ -7,6 +7,9 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Class that tests the NonRegisteredUser Class. Tests should be self-explanatory.
+ */
 class NonRegisteredUserTest {
 
     private NonRegisteredUser testuser;
@@ -26,6 +29,10 @@ class NonRegisteredUserTest {
 
     }
 
+    /**
+     * tests whether invalid input for a rating is processed correctly. If invalid input was entered the rating will be
+     * set to -1.
+     */
     @Test
     void addRating_InvalidInput() {
         testuser.addRating(-2.0, 1015);
